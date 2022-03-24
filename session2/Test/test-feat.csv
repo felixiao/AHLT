@@ -1,0 +1,796 @@
+
+Drug_	Count	2221
+Drug_	Freq [0]	('amiodarone', 52)
+Drug_	Freq [1]	('digoxin', 50)
+Drug_	Freq [2]	('phenytoin', 38)
+Drug_	Freq [3]	('magnesium', 35)
+Drug_	Freq [4]	('lithium', 30)
+Drug_	Freq [5]	('warfarin', 26)
+Drug_	Freq [6]	('theophylline', 25)
+Drug_	Freq [7]	('erythromycin', 24)
+Drug_	Freq [8]	('acid', 21)
+Drug_	Freq [9]	('zalcitabine', 21)
+Drug_	Freq [10]	('terfenadine', 21)
+Drug_	Freq [11]	('furosemide', 20)
+Drug_	Freq [12]	('ibuprofen', 20)
+Drug_	Freq [13]	('ketoconazole', 20)
+Drug_	Freq [14]	('phenobarbital', 20)
+Drug_	Freq [15]	('quinidine', 19)
+Drug_	Freq [16]	('sodium', 18)
+Drug_	Freq [17]	('methotrexate', 18)
+Drug_	Freq [18]	('felbamate', 18)
+Drug_	Freq [19]	('ketoprofen', 18)
+Drug_	False Negative	116
+Drug_	FN [0]	CYP3A4
+Drug_	FN [1]	fulvestrant
+Drug_	FN [2]	cobalt
+Drug_	FN [3]	HIVID
+Drug_	FN [4]	CCNU
+Drug_	FN [5]	antiarrhythmic
+Drug_	FN [6]	Fulvestrant
+Drug_	FN [7]	progesterone
+Drug_	FN [8]	Fe
+Drug_	FN [9]	albuterol
+Drug_	FN [10]	GH
+Drug_	FN [11]	ZDV
+Drug_	FN [12]	minoxidil
+Drug_	FN [13]	deferasirox
+Drug_	FN [14]	CYP2D6
+Drug_	FN [15]	DEET
+Drug_	FN [16]	Myfortic
+Drug_	FN [17]	potassium
+Drug_	FN [18]	antithrombin
+Drug_	FN [19]	III
+Drug_	FN [20]	aspirin
+Drug_	FN [21]	growth
+Drug_	FN [22]	hormone
+Drug_	FN [23]	human
+Drug_	FN [24]	Albuterol
+Drug_	FN [25]	CYP2C9
+Drug_	FN [26]	drugs
+Drug_	FN [27]	anticoagulant
+Drug_	FN [28]	macrolide
+Drug_	FN [29]	antibiotics
+Drug_	FN [30]	diuretics
+Drug_	FN [31]	gestodene
+Drug_	FN [32]	IDV
+Drug_	FN [33]	Co
+Drug_	FN [34]	Cobalt
+Drug_	FN [35]	A
+Drug_	FN [36]	clidinium
+Drug_	FN [37]	antiretroviral
+Drug_	FN [38]	nucleoside
+Drug_	FN [39]	analogues
+Drug_	FN [40]	gold
+Drug_	FN [41]	descarboethoxyloratadine
+Drug_	FN [42]	MPA
+Drug_	FN [43]	Levosimendan
+Drug_	FN [44]	carvedilol
+Drug_	FN [45]	Etomidate
+Drug_	FN [46]	Human
+Drug_	FN [47]	misoprostol
+Drug_	FN [48]	doxepin
+Drug_	FN [49]	Deferasirox
+Drug_	FN [50]	cromolyn
+Drug_	FN [51]	Sorafenib
+Drug_	FN [52]	tricyclic
+Drug_	FN [53]	antidepressants
+Drug_	FN [54]	antihypertensives
+Drug_	FN [55]	CYP1A2
+Drug_	FN [56]	Immunosuppressives
+Drug_	FN [57]	HMG-CoA
+Drug_	FN [58]	Reductase
+Drug_	FN [59]	Cardiac
+Drug_	FN [60]	glycosides
+Drug_	FN [61]	digitalis
+Drug_	FN [62]	Antiarrhythmics
+Drug_	FN [63]	drug
+Drug_	FN [64]	Antihypertensives
+Drug_	FN [65]	channel
+Drug_	FN [66]	Anticoagulants
+Drug_	FN [67]	Antibiotics
+Drug_	FN [68]	anesthesia
+Drug_	FN [69]	Fluoroquinolones
+Drug_	FN [70]	fluoroquinolones
+Drug_	FN [71]	Anesthetic
+Drug_	FN [72]	SALICYLIC
+Drug_	FN [73]	ACID
+Drug_	FN [74]	thiopental
+Drug_	FN [75]	thyroxine
+Drug_	FN [76]	CBZ
+Drug_	FN [77]	Felbamate
+Drug_	FN [78]	muromonab-CD3
+Drug_	FN [79]	MEPERIDINE
+Drug_	FN [80]	ALCOHOL
+Drug_	FN [81]	corticosteroid
+Drug_	FN [82]	CaNa
+Drug_	FN [83]	2
+Drug_	FN [84]	EDTA
+Drug_	FN [85]	Succimer
+Drug_	FN [86]	succimer
+Drug_	FN [87]	antacids
+Drug_	FN [88]	nefazadone
+Drug_	FN [89]	zafirlukast
+Drug_	FN [90]	medroxyprogesterone
+Drug_	FN [91]	EACA
+Drug_	FN [92]	dipyrone
+Drug_	FN [93]	Nonsteroidal
+Drug_	FN [94]	Antiinflammatory
+Drug_	FN [95]	Aspirin
+Drug_	FN [96]	nonsteroidal
+Drug_	FN [97]	anti-inflammatory
+Drug_	FN [98]	ACTH
+Drug_	FN [99]	thiazide
+Drug_	FN [100]	Prednisolone
+Drug_	FN [101]	ETHANOL
+Drug_	FN [102]	salts
+Drug_	FN [103]	B6
+Drug_	FN [104]	cardioplegic
+Drug_	FN [105]	solutions
+Drug_	FN [106]	polystyrene
+Drug_	FN [107]	sulfonate
+Drug_	FN [108]	thiocyanate
+Drug_	FN [109]	perchlorate
+Drug_	FN [110]	somatrem
+Drug_	FN [111]	activated
+Drug_	FN [112]	charcoal
+Drug_	FN [113]	levonorgesterol
+Drug_	FN [114]	B-12
+Drug_	FN [115]	histamine
+Drug_	False Positive	60
+Drug_	FP [0]	piperine
+Drug_	FP [1]	ProAmatine
+Drug_	FP [2]	Misonidazole
+Drug_	FP [3]	Nutropin
+Drug_	FP [4]	Metopirone
+Drug_	FP [5]	nitrosourea
+Drug_	FP [6]	quinpirole
+Drug_	FP [7]	epoxide
+Drug_	FP [8]	3-hydroxy-1,4-benzodiazepine
+Drug_	FP [9]	phenyl-butazone
+Drug_	FP [10]	testosterone
+Drug_	FP [11]	glycoside
+Drug_	FP [12]	Monoamine
+Drug_	FP [13]	Oxidase
+Drug_	FP [14]	Antimigraine
+Drug_	FP [15]	Zimelidine
+Drug_	FP [16]	misonidazole
+Drug_	FP [17]	norketamine
+Drug_	FP [18]	phenazepam
+Drug_	FP [19]	Urinary
+Drug_	FP [20]	acidifying
+Drug_	FP [21]	metanephrine
+Drug_	FP [22]	normetanephrine
+Drug_	FP [23]	acetaminophen/phenobarbital
+Drug_	FP [24]	acetaminophen/theophylline
+Drug_	FP [25]	lidocaine/quinidine
+Drug_	FP [26]	phenobarbital/acetaminophen
+Drug_	FP [27]	phenobarbital/valproic
+Drug_	FP [28]	quinidine/lidocaine
+Drug_	FP [29]	theophylline/acetaminophen
+Drug_	FP [30]	acid/phenobarbital
+Drug_	FP [31]	secobarbitone
+Drug_	FP [32]	N-desmethylclozapine
+Drug_	FP [33]	N-oxide
+Drug_	FP [34]	epididymides
+Drug_	FP [35]	Piperine
+Drug_	FP [36]	Tetracycline
+Drug_	FP [37]	HCTZ/triamterene
+Drug_	FP [38]	conjugated
+Drug_	FP [39]	estrogens
+Drug_	FP [40]	penicillins
+Drug_	FP [41]	Penicillin
+Drug_	FP [42]	Clofibric
+Drug_	FP [43]	clofibric
+Drug_	FP [44]	rifamycins
+Drug_	FP [45]	ginseng
+Drug_	FP [46]	b-acetyldigoxin
+Drug_	FP [47]	neostgmine
+Drug_	FP [48]	supine
+Drug_	FP [49]	desglymidodrine
+Drug_	FP [50]	interferon
+Drug_	FP [51]	Somatrem/Somatropin
+Drug_	FP [52]	magnesium-aluminum
+Drug_	FP [53]	Acyclovir/Ganciclovir
+Drug_	FP [54]	acyclovir/ganciclovir
+Drug_	FP [55]	Azathioprine/Mycophenolate
+Drug_	FP [56]	1-aminobenzotriazole
+Drug_	FP [57]	diethyldithiocarbamate~tranylcypromine
+Drug_	FP [58]	Furafylline
+Drug_	FP [59]	sulfaphenazole
+Drug_	FreqPrfx [0]	('acid', 84)
+Drug_	FreqPrfx [1]	('HCl', 70)
+Drug_	FreqPrfx [2]	('phe', 68)
+Drug_	FreqPrfx [3]	('phen', 68)
+Drug_	FreqPrfx [4]	('ami', 60)
+Drug_	FreqPrfx [5]	('dig', 53)
+Drug_	FreqPrfx [6]	('iron', 52)
+Drug_	FreqPrfx [7]	('amio', 52)
+Drug_	FreqPrfx [8]	('amiod', 52)
+Drug_	FreqPrfx [9]	('amioda', 52)
+Drug_	FreqPrfx [10]	('amiodar', 52)
+Drug_	FreqPrfx [11]	('digo', 50)
+Drug_	FreqPrfx [12]	('digox', 50)
+Drug_	FreqPrfx [13]	('digoxi', 50)
+Drug_	FreqPrfx [14]	('digoxin', 50)
+Drug_	FreqPrfx [15]	('pro', 46)
+Drug_	FreqPrfx [16]	('pheny', 44)
+Drug_	FreqPrfx [17]	('clo', 42)
+Drug_	FreqPrfx [18]	('met', 41)
+Drug_	FreqPrfx [19]	('ket', 41)
+Drug_	FreqPrfx [20]	('phenyt', 38)
+Drug_	FreqSufx [0]	('ine', 530)
+Drug_	FreqSufx [1]	('ide', 165)
+Drug_	FreqSufx [2]	('dine', 165)
+Drug_	FreqSufx [3]	('one', 127)
+Drug_	FreqSufx [4]	('cin', 118)
+Drug_	FreqSufx [5]	('ium', 110)
+Drug_	FreqSufx [6]	('ate', 108)
+Drug_	FreqSufx [7]	('idine', 101)
+Drug_	FreqSufx [8]	('ole', 96)
+Drug_	FreqSufx [9]	('zole', 93)
+Drug_	FreqSufx [10]	('acid', 84)
+Drug_	FreqSufx [11]	('azole', 81)
+Drug_	FreqSufx [12]	('mide', 80)
+Drug_	FreqSufx [13]	('rone', 80)
+Drug_	FreqSufx [14]	('HCl', 70)
+Drug_	FreqSufx [15]	('fen', 69)
+Drug_	FreqSufx [16]	('mine', 68)
+Drug_	FreqSufx [17]	('arone', 68)
+Drug_	FreqSufx [18]	('darone', 68)
+Drug_	FreqSufx [19]	('odarone', 66)
+Drug_	FreqSufx [20]	('amine', 65)
+Drug_	FreqPrefLen [3]	[ 188. 2034.]
+Drug_	FreqPrefLen [4]	[ 204. 2011.]
+Drug_	FreqPrefLen [5]	[ 203. 1726.]
+Drug_	FreqPrefLen [6]	[ 198. 1702.]
+Drug_	FreqPrefLen [7]	[ 191. 1587.]
+Drug_	FreqSuffLen [3]	[  78. 2213.]
+Drug_	FreqSuffLen [4]	[ 134. 2257.]
+Drug_	FreqSuffLen [5]	[ 144. 1963.]
+Drug_	FreqSuffLen [6]	[ 160. 1912.]
+Drug_	FreqSuffLen [7]	[ 168. 1757.]
+Drug_	FreqLen [2]	0.4%
+Drug_	FreqLen [3]	0.5%
+Drug_	FreqLen [4]	1.0%
+Drug_	FreqLen [5]	2.9%
+Drug_	FreqLen [6]	0.8%
+Drug_	FreqLen [7]	2.5%
+Drug_	FreqLen [8]	9.7%
+Drug_	FreqLen [9]	6.4%
+Drug_	FreqLen [10]	19.5%
+Drug_	FreqLen [11]	17.9%
+Drug_	FreqLen [12]	12.3%
+Drug_	FreqLen [13]	12.7%
+Drug_	FreqLen [14]	6.9%
+Drug_	FreqLen [15]	3.1%
+Drug_	FreqLen [16]	0.9%
+Drug_	FreqLen [17]	0.9%
+Drug_	FreqLen [18]	0.5%
+Drug_	FreqLen [19]	0.6%
+Drug_	FreqLen [20]	0.3%
+Drug_	FreqLen [22]	0.0%
+Drug_	FreqLen [25]	0.1%
+Drug_	AllUpper	3.4%
+Drug_	AllLower	79.2%
+Drug_	BUpper	17.3%
+Drug_	Hasupper	0.1%
+Drug_	Hassymbols	1.2%
+Drug_	Hasnumbers	1.4%
+
+DrugN	Count	90
+DrugN	Freq [0]	('I', 10)
+DrugN	Freq [1]	('precocene', 9)
+DrugN	Freq [2]	('quinpirole', 7)
+DrugN	Freq [3]	('piperine', 6)
+DrugN	Freq [4]	('CRM197', 5)
+DrugN	Freq [5]	('Misonidazole', 4)
+DrugN	Freq [6]	('angiotensin', 4)
+DrugN	Freq [7]	('picrotoxin', 3)
+DrugN	Freq [8]	('epoxide', 3)
+DrugN	Freq [9]	('ABT', 3)
+DrugN	Freq [10]	('misonidazole', 2)
+DrugN	Freq [11]	('carbamazepine', 2)
+DrugN	Freq [12]	('acid', 2)
+DrugN	Freq [13]	('MPAG', 2)
+DrugN	Freq [14]	('MPA', 2)
+DrugN	Freq [15]	('3-hydroxy', 1)
+DrugN	Freq [16]	('ropivacaine', 1)
+DrugN	Freq [17]	('Zimelidine', 1)
+DrugN	Freq [18]	('norketamine', 1)
+DrugN	Freq [19]	('phenazepam', 1)
+DrugN	False Negative	38
+DrugN	FN [0]	I
+DrugN	FN [1]	precocene
+DrugN	FN [2]	quinpirole
+DrugN	FN [3]	piperine
+DrugN	FN [4]	CRM197
+DrugN	FN [5]	Misonidazole
+DrugN	FN [6]	angiotensin
+DrugN	FN [7]	epoxide
+DrugN	FN [8]	ABT
+DrugN	FN [9]	misonidazole
+DrugN	FN [10]	carbamazepine
+DrugN	FN [11]	MPAG
+DrugN	FN [12]	MPA
+DrugN	FN [13]	3-hydroxy
+DrugN	FN [14]	ropivacaine
+DrugN	FN [15]	Zimelidine
+DrugN	FN [16]	norketamine
+DrugN	FN [17]	phenazepam
+DrugN	FN [18]	phenibut
+DrugN	FN [19]	amizyl
+DrugN	FN [20]	Carbamazepine
+DrugN	FN [21]	N-desmethylclozapine
+DrugN	FN [22]	clozapine
+DrugN	FN [23]	N-oxide
+DrugN	FN [24]	Piperine
+DrugN	FN [25]	cross-reacting
+DrugN	FN [26]	material
+DrugN	FN [27]	197
+DrugN	FN [28]	Clofibric
+DrugN	FN [29]	clofibric
+DrugN	FN [30]	desglymidodrine
+DrugN	FN [31]	1
+DrugN	FN [32]	2
+DrugN	FN [33]	angiotensins
+DrugN	FN [34]	1-aminobenzotriazole
+DrugN	FN [35]	Precocene
+DrugN	FN [36]	Furafylline
+DrugN	FN [37]	sulfaphenazole
+DrugN	False Positive	10
+DrugN	FP [0]	descarboethoxyloratadine
+DrugN	FP [1]	Loratadine
+DrugN	FP [2]	nortriptyline
+DrugN	FP [3]	CCNU
+DrugN	FP [4]	vanillylmandelic
+DrugN	FP [5]	phosphate
+DrugN	FP [6]	sodium
+DrugN	FP [7]	polystyrene
+DrugN	FP [8]	sulfonate
+DrugN	FP [9]	perchlorate
+DrugN	FreqPrfx [0]	('I', 50)
+DrugN	FreqPrfx [1]	('ABT', 15)
+DrugN	FreqPrfx [2]	('MPA', 12)
+DrugN	FreqPrfx [3]	('CRM197', 10)
+DrugN	FreqPrfx [4]	('pre', 9)
+DrugN	FreqPrfx [5]	('prec', 9)
+DrugN	FreqPrfx [6]	('preco', 9)
+DrugN	FreqPrfx [7]	('precoc', 9)
+DrugN	FreqPrfx [8]	('precoce', 9)
+DrugN	FreqPrfx [9]	('acid', 8)
+DrugN	FreqPrfx [10]	('MPAG', 8)
+DrugN	FreqPrfx [11]	('qui', 7)
+DrugN	FreqPrfx [12]	('quin', 7)
+DrugN	FreqPrfx [13]	('quinp', 7)
+DrugN	FreqPrfx [14]	('quinpi', 7)
+DrugN	FreqPrfx [15]	('quinpir', 7)
+DrugN	FreqPrfx [16]	('pip', 6)
+DrugN	FreqPrfx [17]	('pipe', 6)
+DrugN	FreqPrfx [18]	('piper', 6)
+DrugN	FreqPrfx [19]	('piperi', 6)
+DrugN	FreqPrfx [20]	('piperin', 6)
+DrugN	FreqSufx [0]	('I', 50)
+DrugN	FreqSufx [1]	('ine', 18)
+DrugN	FreqSufx [2]	('ole', 15)
+DrugN	FreqSufx [3]	('ABT', 15)
+DrugN	FreqSufx [4]	('197', 10)
+DrugN	FreqSufx [5]	('CRM197', 10)
+DrugN	FreqSufx [6]	('MPA', 10)
+DrugN	FreqSufx [7]	('ene', 10)
+DrugN	FreqSufx [8]	('cene', 10)
+DrugN	FreqSufx [9]	('ocene', 10)
+DrugN	FreqSufx [10]	('cocene', 10)
+DrugN	FreqSufx [11]	('ecocene', 10)
+DrugN	FreqSufx [12]	('zole', 8)
+DrugN	FreqSufx [13]	('azole', 8)
+DrugN	FreqSufx [14]	('rine', 8)
+DrugN	FreqSufx [15]	('acid', 8)
+DrugN	FreqSufx [16]	('MPAG', 8)
+DrugN	FreqSufx [17]	('role', 7)
+DrugN	FreqSufx [18]	('irole', 7)
+DrugN	FreqSufx [19]	('pirole', 7)
+DrugN	FreqSufx [20]	('npirole', 7)
+DrugN	FreqPrefLen [3]	[11. 74.]
+DrugN	FreqPrefLen [4]	[10. 58.]
+DrugN	FreqPrefLen [5]	[ 8. 42.]
+DrugN	FreqPrefLen [6]	[ 8. 47.]
+DrugN	FreqPrefLen [7]	[ 7. 37.]
+DrugN	FreqSuffLen [3]	[ 9. 89.]
+DrugN	FreqSuffLen [4]	[11. 70.]
+DrugN	FreqSuffLen [5]	[ 9. 51.]
+DrugN	FreqSuffLen [6]	[ 9. 53.]
+DrugN	FreqSuffLen [7]	[ 8. 43.]
+DrugN	FreqLen [2]	13.3%
+DrugN	FreqLen [4]	6.7%
+DrugN	FreqLen [5]	4.4%
+DrugN	FreqLen [7]	6.7%
+DrugN	FreqLen [8]	4.4%
+DrugN	FreqLen [9]	10.0%
+DrugN	FreqLen [10]	15.6%
+DrugN	FreqLen [11]	13.3%
+DrugN	FreqLen [12]	7.8%
+DrugN	FreqLen [13]	7.8%
+DrugN	FreqLen [14]	3.3%
+DrugN	FreqLen [15]	2.2%
+DrugN	FreqLen [16]	1.1%
+DrugN	FreqLen [21]	3.3%
+DrugN	AllUpper	24.4%
+DrugN	AllLower	58.9%
+DrugN	BUpper	13.3%
+DrugN	Hasupper	3.3%
+DrugN	Hassymbols	6.7%
+DrugN	Hasnumbers	12.2%
+
+Brand	Count	287
+Brand	Freq [0]	('aspirin', 30)
+Brand	Freq [1]	('VIRACEPT', 23)
+Brand	Freq [2]	('Felbatol', 23)
+Brand	Freq [3]	('TIKOSYN', 14)
+Brand	Freq [4]	('Aspirin', 11)
+Brand	Freq [5]	('CAMPTOSAR', 11)
+Brand	Freq [6]	('FORADIL', 10)
+Brand	Freq [7]	('Myfortic', 9)
+Brand	Freq [8]	('Exjade', 8)
+Brand	Freq [9]	('MOBIC', 8)
+Brand	Freq [10]	('SKELID', 7)
+Brand	Freq [11]	('Norpace', 6)
+Brand	Freq [12]	('DIPRIVAN', 6)
+Brand	Freq [13]	('ProAmatine', 6)
+Brand	Freq [14]	('NEXAVAR', 5)
+Brand	Freq [15]	('Simulect', 5)
+Brand	Freq [16]	('TRACRIUM', 4)
+Brand	Freq [17]	('Proquin', 4)
+Brand	Freq [18]	('XR', 4)
+Brand	Freq [19]	('FOSCAVIR', 4)
+Brand	False Negative	30
+Brand	FN [0]	Norpace
+Brand	FN [1]	XR
+Brand	FN [2]	ALPHAGAN
+Brand	FN [3]	P
+Brand	FN [4]	ATROVENT
+Brand	FN [5]	Nutropin
+Brand	FN [6]	Metopirone
+Brand	FN [7]	AGGRASTAT
+Brand	FN [8]	depo-subQ
+Brand	FN [9]	provera
+Brand	FN [10]	104
+Brand	FN [11]	ELOXATIN
+Brand	FN [12]	CHEMET
+Brand	FN [13]	Campath
+Brand	FN [14]	Gemzar
+Brand	FN [15]	Elavil
+Brand	FN [16]	Sinequan
+Brand	FN [17]	Pamelor
+Brand	FN [18]	Tofranil
+Brand	FN [19]	Vivactil
+Brand	FN [20]	Norpramin
+Brand	FN [21]	ASPIRIN
+Brand	FN [22]	DISALCID
+Brand	FN [23]	CR
+Brand	FN [24]	secobarbitone
+Brand	FN [25]	sodium
+Brand	FN [26]	clindamycin
+Brand	FN [27]	ISUPREL
+Brand	FN [28]	aspirins
+Brand	FN [29]	MAXIPIME
+Brand	False Positive	9
+Brand	FP [0]	HIVID
+Brand	FP [1]	HB-EGF
+Brand	FP [2]	Clostridium
+Brand	FP [3]	ZDV
+Brand	FP [4]	Epidural
+Brand	FP [5]	gelatin
+Brand	FP [6]	HAART
+Brand	FP [7]	GH
+Brand	FP [8]	PMs
+Brand	FreqPrfx [0]	('asp', 31)
+Brand	FreqPrfx [1]	('aspi', 31)
+Brand	FreqPrfx [2]	('aspir', 31)
+Brand	FreqPrfx [3]	('aspiri', 31)
+Brand	FreqPrfx [4]	('aspirin', 31)
+Brand	FreqPrfx [5]	('MOBIC', 24)
+Brand	FreqPrfx [6]	('VIR', 23)
+Brand	FreqPrfx [7]	('VIRA', 23)
+Brand	FreqPrfx [8]	('VIRAC', 23)
+Brand	FreqPrfx [9]	('VIRACE', 23)
+Brand	FreqPrfx [10]	('VIRACEP', 23)
+Brand	FreqPrfx [11]	('Fel', 23)
+Brand	FreqPrfx [12]	('Felb', 23)
+Brand	FreqPrfx [13]	('Felba', 23)
+Brand	FreqPrfx [14]	('Felbat', 23)
+Brand	FreqPrfx [15]	('Felbato', 23)
+Brand	FreqPrfx [16]	('XR', 20)
+Brand	FreqPrfx [17]	('Exjade', 16)
+Brand	FreqPrfx [18]	('P', 15)
+Brand	FreqPrfx [19]	('SKELID', 14)
+Brand	FreqPrfx [20]	('TIK', 14)
+Brand	FreqSufx [0]	('rin', 41)
+Brand	FreqSufx [1]	('irin', 41)
+Brand	FreqSufx [2]	('pirin', 41)
+Brand	FreqSufx [3]	('spirin', 41)
+Brand	FreqSufx [4]	('aspirin', 30)
+Brand	FreqSufx [5]	('MOBIC', 24)
+Brand	FreqSufx [6]	('EPT', 23)
+Brand	FreqSufx [7]	('CEPT', 23)
+Brand	FreqSufx [8]	('ACEPT', 23)
+Brand	FreqSufx [9]	('RACEPT', 23)
+Brand	FreqSufx [10]	('IRACEPT', 23)
+Brand	FreqSufx [11]	('tol', 23)
+Brand	FreqSufx [12]	('atol', 23)
+Brand	FreqSufx [13]	('batol', 23)
+Brand	FreqSufx [14]	('lbatol', 23)
+Brand	FreqSufx [15]	('elbatol', 23)
+Brand	FreqSufx [16]	('XR', 20)
+Brand	FreqSufx [17]	('Exjade', 16)
+Brand	FreqSufx [18]	('P', 15)
+Brand	FreqSufx [19]	('SKELID', 14)
+Brand	FreqSufx [20]	('SYN', 14)
+Brand	FreqPrefLen [3]	[ 30. 242.]
+Brand	FreqPrefLen [4]	[ 30. 232.]
+Brand	FreqPrefLen [5]	[ 32. 253.]
+Brand	FreqPrefLen [6]	[ 32. 254.]
+Brand	FreqPrefLen [7]	[ 26. 203.]
+Brand	FreqSuffLen [3]	[ 29. 241.]
+Brand	FreqSuffLen [4]	[ 29. 230.]
+Brand	FreqSuffLen [5]	[ 31. 251.]
+Brand	FreqSuffLen [6]	[ 31. 252.]
+Brand	FreqSuffLen [7]	[ 26. 202.]
+Brand	FreqLen [2]	1.0%
+Brand	FreqLen [3]	1.7%
+Brand	FreqLen [4]	0.7%
+Brand	FreqLen [6]	3.5%
+Brand	FreqLen [7]	10.1%
+Brand	FreqLen [8]	33.1%
+Brand	FreqLen [9]	36.9%
+Brand	FreqLen [10]	9.1%
+Brand	FreqLen [11]	3.1%
+Brand	FreqLen [12]	0.3%
+Brand	FreqLen [14]	0.3%
+Brand	AllUpper	49.1%
+Brand	AllLower	12.5%
+Brand	BUpper	36.9%
+Brand	Hasupper	1.4%
+Brand	Hassymbols	2.4%
+Brand	Hasnumbers	1.0%
+
+Group	Count	1104
+Group	Freq [0]	('agents', 40)
+Group	Freq [1]	('drugs', 35)
+Group	Freq [2]	('diuretics', 28)
+Group	Freq [3]	('inhibitors', 28)
+Group	Freq [4]	('contraceptives', 23)
+Group	Freq [5]	('corticosteroids', 18)
+Group	Freq [6]	('antibiotics', 17)
+Group	Freq [7]	('anticoagulants', 16)
+Group	Freq [8]	('hormonal', 16)
+Group	Freq [9]	('antidepressants', 15)
+Group	Freq [10]	('digitalis', 14)
+Group	Freq [11]	('D', 13)
+Group	Freq [12]	('anti-inflammatory', 13)
+Group	Freq [13]	('antacids', 12)
+Group	Freq [14]	('tricyclic', 11)
+Group	Freq [15]	('blockers', 11)
+Group	Freq [16]	('vitamin', 11)
+Group	Freq [17]	('Amphetamines', 11)
+Group	Freq [18]	('salicylate', 10)
+Group	Freq [19]	('anesthetics', 9)
+Group	False Negative	54
+Group	FN [0]	combination
+Group	FN [1]	nitrosourea
+Group	FN [2]	,
+Group	FN [3]	inhaled
+Group	FN [4]	highly
+Group	FN [5]	active
+Group	FN [6]	Combination
+Group	FN [7]	potassium
+Group	FN [8]	potassium-depleting
+Group	FN [9]	Alpha-agonists
+Group	FN [10]	anxiolytic
+Group	FN [11]	3-hydroxy-1,4-benzodiazepine
+Group	FN [12]	cytostatic
+Group	FN [13]	sedating
+Group	FN [14]	glycoside
+Group	FN [15]	Monoamine
+Group	FN [16]	Oxidase
+Group	FN [17]	I
+Group	FN [18]	amide-type
+Group	FN [19]	local
+Group	FN [20]	nitrosoureas
+Group	FN [21]	alkalinizing
+Group	FN [22]	SALICYLATE
+Group	FN [23]	DRUGS
+Group	FN [24]	anion
+Group	FN [25]	exchange
+Group	FN [26]	Oral
+Group	FN [27]	NARCOTIC
+Group	FN [28]	ANALGESICS
+Group	FN [29]	ANESTHETICS
+Group	FN [30]	PHENOTHIAZINES
+Group	FN [31]	TRANQUILIZERS
+Group	FN [32]	SEDATIVE-HYPNOTICS
+Group	FN [33]	BARBITURATES
+Group	FN [34]	TRICYCLIC
+Group	FN [35]	ANTIDEPRESSANTS
+Group	FN [36]	DEPRESSANTS
+Group	FN [37]	antibodies
+Group	FN [38]	anticancer
+Group	FN [39]	Tetracycline
+Group	FN [40]	anti-ulcer
+Group	FN [41]	depleting
+Group	FN [42]	cannabinoids
+Group	FN [43]	Penicillin
+Group	FN [44]	rifamycins
+Group	FN [45]	NNRTIs
+Group	FN [46]	Potassium-depleting
+Group	FN [47]	laxative
+Group	FN [48]	anabolic
+Group	FN [49]	estrogen-containing
+Group	FN [50]	iodine-containing
+Group	FN [51]	interferon
+Group	FN [52]	interleukin
+Group	FN [53]	Live
+Group	False Positive	46
+Group	FP [0]	analogues
+Group	FP [1]	-adrenergic
+Group	FP [2]	angiotensin
+Group	FP [3]	progestin
+Group	FP [4]	VIRACEPT
+Group	FP [5]	azoles
+Group	FP [6]	antiemetic
+Group	FP [7]	nucleoside
+Group	FP [8]	gold
+Group	FP [9]	beta-lactamtype
+Group	FP [10]	penicillin-type
+Group	FP [11]	stimulant
+Group	FP [12]	Blockers
+Group	FP [13]	myelosuppressive
+Group	FP [14]	antidiabetes
+Group	FP [15]	CHOP
+Group	FP [16]	one
+Group	FP [17]	antihypertensives
+Group	FP [18]	Immunosuppressives
+Group	FP [19]	Cardiac
+Group	FP [20]	-receptor
+Group	FP [21]	Fluoroquinolones
+Group	FP [22]	fluoroquinolones
+Group	FP [23]	Anesthetic
+Group	FP [24]	catecholamines
+Group	FP [25]	anticoagulents
+Group	FP [26]	anti-KS
+Group	FP [27]	iron
+Group	FP [28]	supplements
+Group	FP [29]	sedative
+Group	FP [30]	aspirins
+Group	FP [31]	ACTH
+Group	FP [32]	Herb/Nutraceutical
+Group	FP [33]	B6
+Group	FP [34]	H-2
+Group	FP [35]	Antagonists
+Group	FP [36]	prophylaxis
+Group	FP [37]	withhold
+Group	FP [38]	Physiology
+Group	FP [39]	Adrenocorticoids
+Group	FP [40]	B-12
+Group	FP [41]	in
+Group	FP [42]	K
+Group	FP [43]	1
+Group	FP [44]	2
+Group	FP [45]	CYP
+Group	FreqPrfx [0]	('ant', 140)
+Group	FreqPrfx [1]	('anti', 117)
+Group	FreqPrfx [2]	('drugs', 105)
+Group	FreqPrfx [3]	('agents', 80)
+Group	FreqPrfx [4]	('D', 65)
+Group	FreqPrfx [5]	('agent', 55)
+Group	FreqPrfx [6]	('drug', 55)
+Group	FreqPrfx [7]	('Ant', 46)
+Group	FreqPrfx [8]	('age', 45)
+Group	FreqPrfx [9]	('agen', 45)
+Group	FreqPrfx [10]	('dru', 40)
+Group	FreqPrfx [11]	('Anti', 38)
+Group	FreqPrfx [12]	('inh', 34)
+Group	FreqPrfx [13]	('diu', 33)
+Group	FreqPrfx [14]	('diur', 33)
+Group	FreqPrfx [15]	('diure', 33)
+Group	FreqPrfx [16]	('diuret', 33)
+Group	FreqPrfx [17]	('diureti', 33)
+Group	FreqPrfx [18]	('inhi', 32)
+Group	FreqPrfx [19]	('inhib', 32)
+Group	FreqPrfx [20]	('inhibi', 32)
+Group	FreqSufx [0]	('drugs', 105)
+Group	FreqSufx [1]	('nts', 100)
+Group	FreqSufx [2]	('agents', 80)
+Group	FreqSufx [3]	('ics', 72)
+Group	FreqSufx [4]	('D', 65)
+Group	FreqSufx [5]	('nes', 62)
+Group	FreqSufx [6]	('tics', 61)
+Group	FreqSufx [7]	('ids', 57)
+Group	FreqSufx [8]	('ines', 52)
+Group	FreqSufx [9]	('ants', 52)
+Group	FreqSufx [10]	('ents', 48)
+Group	FreqSufx [11]	('gents', 48)
+Group	FreqSufx [12]	('tic', 46)
+Group	FreqSufx [13]	('etics', 41)
+Group	FreqSufx [14]	('ugs', 39)
+Group	FreqSufx [15]	('rugs', 39)
+Group	FreqSufx [16]	('oids', 38)
+Group	FreqSufx [17]	('ors', 36)
+Group	FreqSufx [18]	('tors', 36)
+Group	FreqSufx [19]	('ves', 36)
+Group	FreqSufx [20]	('ives', 36)
+Group	FreqPrefLen [3]	[  89. 1002.]
+Group	FreqPrefLen [4]	[ 96. 989.]
+Group	FreqPrefLen [5]	[106. 978.]
+Group	FreqPrefLen [6]	[104. 873.]
+Group	FreqPrefLen [7]	[ 95. 709.]
+Group	FreqSuffLen [3]	[  68. 1074.]
+Group	FreqSuffLen [4]	[  89. 1024.]
+Group	FreqSuffLen [5]	[ 103. 1008.]
+Group	FreqSuffLen [6]	[ 95. 897.]
+Group	FreqSuffLen [7]	[ 87. 726.]
+Group	FreqLen [2]	1.6%
+Group	FreqLen [3]	0.4%
+Group	FreqLen [4]	1.5%
+Group	FreqLen [5]	2.4%
+Group	FreqLen [6]	5.2%
+Group	FreqLen [7]	7.4%
+Group	FreqLen [8]	6.3%
+Group	FreqLen [9]	11.8%
+Group	FreqLen [10]	12.0%
+Group	FreqLen [11]	9.8%
+Group	FreqLen [12]	7.4%
+Group	FreqLen [13]	6.8%
+Group	FreqLen [14]	5.4%
+Group	FreqLen [15]	9.3%
+Group	FreqLen [16]	8.5%
+Group	FreqLen [17]	0.7%
+Group	FreqLen [18]	2.4%
+Group	FreqLen [19]	0.3%
+Group	FreqLen [20]	0.4%
+Group	FreqLen [23]	0.2%
+Group	FreqLen [29]	0.1%
+Group	AllUpper	4.1%
+Group	AllLower	77.4%
+Group	BUpper	18.0%
+Group	Hasupper	0.5%
+Group	Hassymbols	8.2%
+Group	Hasnumbers	1.2%
+
+Other	Count	26696
+Other	FreqLen [2]	16.5%
+Other	FreqLen [3]	16.7%
+Other	FreqLen [4]	13.4%
+Other	FreqLen [5]	10.4%
+Other	FreqLen [6]	7.3%
+Other	FreqLen [7]	6.1%
+Other	FreqLen [8]	5.8%
+Other	FreqLen [9]	6.3%
+Other	FreqLen [10]	4.9%
+Other	FreqLen [11]	3.4%
+Other	FreqLen [12]	3.3%
+Other	FreqLen [13]	2.0%
+Other	FreqLen [14]	1.3%
+Other	FreqLen [15]	1.2%
+Other	FreqLen [16]	0.5%
+Other	FreqLen [17]	0.5%
+Other	FreqLen [18]	0.1%
+Other	FreqLen [19]	0.1%
+Other	FreqLen [20]	0.1%
+Other	FreqLen [21]	0.1%
+Other	FreqLen [22]	0.0%
+Other	FreqLen [23]	0.0%
+Other	FreqLen [24]	0.0%
+Other	FreqLen [25]	0.0%
+Other	FreqLen [26]	0.0%
+Other	FreqLen [27]	0.0%
+Other	FreqLen [28]	0.0%
+Other	FreqLen [30]	0.0%
+Other	FreqLen [39]	0.0%
+['diethyldithiocarbamate~tranylcypromine']
+Other	AllUpper	1.7%
+Other	AllLower	75.8%
+Other	BUpper	5.4%
+Other	Hasupper	17.2%
+Other	Hassymbols	9.3%
+Other	Hasnumbers	2.8%
