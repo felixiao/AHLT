@@ -1,6 +1,6 @@
 #! /bin/bash
 
-BASEDIR=..
+BASEDIR=/Users/Felix/Documents/MAI/AHLT/LAB/AHLT/
 export PYTHONPATH=$BASEDIR/util
 
 $BASEDIR/util/corenlp-server.sh -quiet true -port 9000 -timeout 15000  &

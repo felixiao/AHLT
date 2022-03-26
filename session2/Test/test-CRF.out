@@ -377,7 +377,7 @@ DDI-DrugBank.d103.s8|81-94|antihistamines|group
 DDI-DrugBank.d103.s8|101-125|tricyclic antidepressants|group
 DDI-DrugBank.d103.s10|52-58|FORADIL|brand
 DDI-DrugBank.d103.s10|62-80|formoterol fumarate|drug
-DDI-DrugBank.d103.s14|0-6|FORADIL|drug
+DDI-DrugBank.d103.s14|0-6|FORADIL|brand
 DDI-DrugBank.d103.s15|63-75|beta2-agonist|group
 DDI-DrugBank.d103.s15|85-94|salbutamol|drug
 DDI-DrugBank.d103.s17|189-202|beta2-agonists|group
@@ -522,13 +522,12 @@ DDI-DrugBank.d340.s32|0-7|Rifampin|drug
 DDI-DrugBank.d340.s32|30-37|rifampin|drug
 DDI-DrugBank.d340.s32|43-50|VIRACEPT|brand
 DDI-DrugBank.d340.s32|83-92|nelfinavir|drug
-DDI-DrugBank.d340.s33|0-7|VIRACEPT|drug
 DDI-DrugBank.d340.s33|13-20|rifampin|drug
 DDI-DrugBank.d340.s34|5-18|Contraceptives|group
 DDI-DrugBank.d340.s35|0-16|Ethinyl Estradiol|drug
 DDI-DrugBank.d340.s35|22-34|Norethindrone|drug
 DDI-DrugBank.d340.s35|57-64|VIRACEPT|brand
-DDI-DrugBank.d340.s35|71-78|OVCON-35|drug_n
+DDI-DrugBank.d340.s35|71-78|OVCON-35|drug
 DDI-DrugBank.d340.s35|110-126|ethinyl estradiol|drug
 DDI-DrugBank.d340.s35|151-163|norethindrone|drug
 DDI-DrugBank.d340.s36|82-89|VIRACEPT|brand
@@ -2698,6 +2697,7 @@ DDI-DrugBank.d411.s2|144-160|aluminum hydoxide|drug
 DDI-DrugBank.d411.s2|178-182|resin|group
 DDI-DrugBank.d411.s2|185-208|colestipol hydrochloride|drug
 DDI-DrugBank.d411.s2|211-225|ferrous sulfate|drug
+DDI-DrugBank.d411.s2|235-255|polystyrene sulfonate|drug
 DDI-DrugBank.d411.s2|296-305|sucralfate|drug
 DDI-DrugBank.d411.s3|67-86|levothyroxine sodium|drug
 DDI-DrugBank.d411.s3|169-177|androgens|group

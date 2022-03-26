@@ -46,8 +46,14 @@ if __name__ == '__main__':
     trainer.select('l2sgd', 'crf1d')
     
     # This demonstrates how to list parameters and obtain their values.    
-    trainer.set('feature.minfreq', 1) # mininum frequecy of a feature to consider it
-    trainer.set('c2', 0.1)           # coefficient for L2 regularization
+    trainer.set('feature.minfreq', 2) # mininum frequecy of a feature to consider it
+    trainer.set('c2', 0.01)           # coefficient for L2 regularization
+    trainer.set('delta',1e-08)
+    trainer.set('period',20)
+    trainer.set('max_iterations',2000)
+
+    trainer.set('')
+
 
     print("Training with following parameters: ")
     for name in trainer.params():
@@ -56,3 +62,32 @@ if __name__ == '__main__':
     # Start training and dump model to modelfile
     trainer.train(modelfile, -1)
 
+# Training with following parameters: 
+# feature.minfreq           1.0         The minimum frequency of features.
+# feature.possible_states   False       Force to generate possible state features.
+# feature.possible_transitions False    Force to generate possible transition features.
+# c2                        0.1         Coefficient for L2 regularization.
+# max_iterations            1000        The maximum number of iterations (epochs) for SGD optimization.
+# period                    10          The duration of iterations to test the stopping criterion.
+# delta                     1e-06       The threshold for the stopping criterion; an optimization process stops when
+#                                       the improvement of the log likelihood over the last ${period} iterations is no
+#                                       greater than this threshold.
+# calibration.eta           0.1         The initial value of learning rate (eta) used for calibration.
+# calibration.rate          2.0         The rate of increase/decrease of learning rate for calibration.
+# calibration.samples       1000.0      The number of instances used for calibration.
+# calibration.candidates    10          The number of candidates of learning rate.
+# calibration.max_trials    20          The maximum number of trials of learning rates for calibration.
+# Feature generation
+# type:                         CRF1d
+# feature.minfreq:              1.000000
+# feature.possible_states:      0
+# feature.possible_transitions: 0
+# 0....1....2....3....4....5....6....7....8....9....10
+# Number of features:           133841
+# Seconds required:             1.768
+
+# Stochastic Gradient Descent (SGD)
+# c2:               0.100000
+# max_iterations:   1000
+# period:           10
+# delta:            0.000001

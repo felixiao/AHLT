@@ -41,16 +41,18 @@ def get_tag(token, spans) :
    return "O"
  
 ## --------- Feature extractor ----------- 
-## -- Extract features for each token in given sentence
-prefixList = ['acid','meth','warfari','phenyto','digoxin',
-               'PCP','MHD','toxin','PTX','InsP','EGF',
-               'TAXOL','VIOXX','aspirin','VIDEX','INDOCIN','NIMBEX','ZETIA',
-               'anti','agents','drugs','MAO','inhibit','ACE','CNS','beta']
+# ## -- Extract features for each token in given sentence
+# prefixList = [#'acid','meth','warfari','phenyto','digoxin',
+#                'PCP','MHD','toxin','PTX','InsP','EGF','DZN'
+#                #'TAXOL','VIOXX','aspirin','VIDEX','INDOCIN','NIMBEX','ZETIA',
+#                #'anti','agents','drugs','MAO','inhibit','ACE','CNS','beta'
+#                ]
 
-suffixList = ['ine','ide','cin','acid','one','onazole','farin',
-            'PCP','MHD','toxin','PTX','NANM','TAXOL',
-            'aspirin','VIDEX','NIMBEX','INDOCIN','RON','ZETIA',
-            'agents','tics','MAO','ines','ibitors','ACE','CNS','sants']
+# suffixList = [#'ine','ide','cin','acid','one','onazole','farin',
+#             'PCP','MHD','toxin','PTX','NANM','TAXOL','II'
+#             #'aspirin','VIDEX','NIMBEX','INDOCIN','RON','ZETIA',
+#             #'agents','tics','MAO','ines','ibitors','ACE','CNS','sants'
+#                ]
 
 def extract_features(tokens) :
 
@@ -62,9 +64,9 @@ def extract_features(tokens) :
       tokenFeatures.append("form="+t)
       tokenFeatures.append("formLC="+t.lower())
       # tokenFeatures.append('formLen={len(t)}')
-      # if len(t)<=3:
-      #    tokenFeatures.append('formLen=ExShort')
-      if len(t)<=6:
+      if len(t)<=3:
+         tokenFeatures.append('formLen=ExShort')
+      elif len(t)<=6:
          tokenFeatures.append('formLen=Short')
       elif len(t)<=12:
          tokenFeatures.append('formLen=Medium')
@@ -82,7 +84,7 @@ def extract_features(tokens) :
       hasUpper = True if re.search('[A-Z]+',t) else False
       hasLower = True if re.search('[a-z]+',t) else False
       hasNumber= True if re.search('[0-9]+',t) else False
-      hasSymbol= True if re.search('[-,()]+',t)else False
+      hasSymbol= True if re.search('[-,()/+]+',t)else False
       AllUpper = True if t.isupper() else False
       AllLower = True if t.islower() else False
       AllNumber= True if re.search('^[0-9]+$',t) else False
@@ -94,39 +96,39 @@ def extract_features(tokens) :
       if isTitle : tokenFeatures.append("isTitle")
       if hasUpper: tokenFeatures.append('hasUpper')
       if hasLower: tokenFeatures.append('hasLower')
-      if hasNumber:tokenFeatures.append("hasNumber")
+      # if hasNumber:tokenFeatures.append("hasNumber")
       if hasSymbol:tokenFeatures.append("hasSymbol")
       
       # Has both Number and Symbos
       if hasNumber and hasSymbol: tokenFeatures.append('BothNumberAndSymbol')
       # Only Number and All upper
-      # if hasNumber and not hasLower and not hasSymbol and hasUpper: tokenFeatures.append('OnlyNumberAndUpper')
+      if hasNumber and not hasLower and not hasSymbol and hasUpper: tokenFeatures.append('OnlyNumberAndUpper')
       # Only Number and All lower
-      # if hasNumber and hasLower and not hasSymbol and not hasUpper: tokenFeatures.append('OnlyNumberAndLower')
+      if hasNumber and hasLower and not hasSymbol and not hasUpper: tokenFeatures.append('OnlyNumberAndLower')
       # Only Symbol and All upper
-      # if not hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('OnlySymbolAndUpper')
+      if not hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('OnlySymbolAndUpper')
       # Only Symbol and All lower
-      # if not hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append('OnlySymbolAndLower')
+      if not hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append('OnlySymbolAndLower')
       # Only Number, Symbol and All upper
-      # if hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append('OnlySymbolNumberAndLower')
+      if hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append('OnlySymbolNumberAndLower')
       # Only Number, Symbol and All lower
-      # if hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('OnlySymbolNumberAndUpper')
-      # if re.search('^[(]',t): tokenFeatures.append('beginWith(')
+      if hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('OnlySymbolNumberAndUpper')
+      # if re.search('^(',t): tokenFeatures.append('beginWith(')
 
       if k>0 :
          tPrev = tokens[k-1][0]
          tokenFeatures.append("formPrev="+tPrev)
          tokenFeatures.append("formPrevLC="+tPrev.lower())
          # tokenFeatures.append(f'LenPrev={len(tPrev)}')
-         # if len(tPrev)<=3:
-         #    tokenFeatures.append('LenPrev=ExShort')
-         if len(tPrev)<=6:
+         if len(tPrev)<=3:
+            tokenFeatures.append('LenPrev=ExShort')
+         elif len(tPrev)<=6:
             tokenFeatures.append('LenPrev=Short')
          elif len(tPrev)<=12:
             tokenFeatures.append('LenPrev=Medium')
          else:
             tokenFeatures.append('LenPrev=Long')
-         for i in [2,6]:
+         for i in [3,6]:
             if len(tPrev)>i:
                tokenFeatures.append(f"prf{i}Prev="+tPrev[:i])
                tokenFeatures.append(f"suf{i}Prev="+tPrev[-i:])
@@ -137,7 +139,7 @@ def extract_features(tokens) :
          hasUpper = True if re.search('[A-Z]+',tPrev) else False
          hasLower = True if re.search('[a-z]+',tPrev) else False
          hasNumber= True if re.search('[0-9]+',tPrev) else False
-         hasSymbol= True if re.search('[-,()]+',tPrev)else False
+         hasSymbol= True if re.search('[-,()/+]+',tPrev)else False
          AllUpper = True if tPrev.isupper() else False
          AllLower = True if tPrev.islower() else False
          AllNumber= True if re.search('^[0-9]+$',tPrev) else False
@@ -148,27 +150,27 @@ def extract_features(tokens) :
          if AllNumber:tokenFeatures.append("Prev_AllNumber")
          if isTitle : tokenFeatures.append("Prev_isTitle")
          if hasUpper: tokenFeatures.append('Prev_hasUpper')
-         if hasLower: tokenFeatures.append('Prev_hasLower')
+         # if hasLower: tokenFeatures.append('Prev_hasLower')
          if hasNumber:tokenFeatures.append("Prev_hasNumber")
          if hasSymbol:tokenFeatures.append("Prev_hasSymbol")
 
          # Has both Number and Symbos
          if hasNumber and hasSymbol: tokenFeatures.append('Prev_BothNumberAndSymbol')
          # Only Number and All upper
-         # if hasNumber and not hasLower and not hasSymbol and hasUpper: tokenFeatures.append('Prev_OnlyNumberAndUpper')
+         if hasNumber and not hasLower and not hasSymbol and hasUpper: tokenFeatures.append('Prev_OnlyNumberAndUpper')
          # Only Number and All lower
-         # if hasNumber and hasLower and not hasSymbol and not hasUpper: tokenFeatures.append('Prev_OnlyNumberAndLower')
+         if hasNumber and hasLower and not hasSymbol and not hasUpper: tokenFeatures.append('Prev_OnlyNumberAndLower')
          # Only Symbol and All upper
-         # if not hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('Prev_OnlySymbolAndUpper')
+         if not hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('Prev_OnlySymbolAndUpper')
          # Only Symbol and All lower
-         # if not hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append('Prev_OnlySymbolAndLower')
+         if not hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append('Prev_OnlySymbolAndLower')
          # Only Number, Symbol and All upper
-         # if hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append('Prev_OnlySymbolNumberAndLower')
+         if hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append('Prev_OnlySymbolNumberAndLower')
          # Only Number, Symbol and All lower
-         # if hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('Prev_OnlySymbolNumberAndUpper')
+         if hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('Prev_OnlySymbolNumberAndUpper')
 
          
-         # if re.search('^[(]',tPrev): tokenFeatures.append('Prev_beginWith(')
+         # if re.search('^(',tPrev): tokenFeatures.append('Prev_beginWith(')
       else :
          tokenFeatures.append("BoS")
 
@@ -177,9 +179,9 @@ def extract_features(tokens) :
          tokenFeatures.append("formNext="+tNext)
          tokenFeatures.append("formNextLC="+tNext.lower())
          # tokenFeatures.append(f'LenNext={len(tNext)}')
-         # if len(tNext)<=3:
-         #    tokenFeatures.append('LenNext=ExShort')
-         if len(tNext)<=6:
+         if len(tNext)<=3:
+            tokenFeatures.append('LenNext=ExShort')
+         elif len(tNext)<=6:
             tokenFeatures.append('LenNext=Short')
          elif len(tNext)<=12:
             tokenFeatures.append('LenNext=Medium')
@@ -196,7 +198,7 @@ def extract_features(tokens) :
          hasUpper = True if re.search('[A-Z]+',tNext) else False
          hasLower = True if re.search('[a-z]+',tNext) else False
          hasNumber= True if re.search('[0-9]+',tNext) else False
-         hasSymbol= True if re.search('[-,()]+',tNext)else False
+         hasSymbol= True if re.search('[-,()/+]+',tNext)else False
          AllUpper = True if tNext.isupper() else False
          AllLower = True if tNext.islower() else False
          AllNumber= True if re.search('^[0-9]+$',tNext) else False
@@ -207,27 +209,27 @@ def extract_features(tokens) :
          if AllNumber:tokenFeatures.append("Next_AllNumber")
          if isTitle : tokenFeatures.append("Next_isTitle")
          if hasUpper: tokenFeatures.append('Next_hasUpper')
-         if hasLower: tokenFeatures.append('Next_hasLower')
+         # if hasLower: tokenFeatures.append('Next_hasLower')
          if hasNumber:tokenFeatures.append("Next_hasNumber")
          if hasSymbol:tokenFeatures.append("Next_hasSymbol")
 
          # Has both Number and Symbos
          if hasNumber and hasSymbol: tokenFeatures.append('Next_BothNumberAndSymbol')
          # Only Number and All upper
-         # if hasNumber and not hasLower and not hasSymbol and hasUpper: tokenFeatures.append('Next_OnlyNumberAndUpper')
+         if hasNumber and not hasLower and not hasSymbol and hasUpper: tokenFeatures.append('Next_OnlyNumberAndUpper')
          # Only Number and All lower
          # if hasNumber and hasLower and not hasSymbol and not hasUpper: tokenFeatures.append('Next_OnlyNumberAndLower')
          # Only Symbol and All upper
-         # if not hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('Next_OnlySymbolAndUpper')
+         if not hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('Next_OnlySymbolAndUpper')
          # Only Symbol and All lower
          # if not hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append('Next_OnlySymbolAndLower')
          # Only Number, Symbol and All upper
          # if hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append('Next_OnlySymbolNumberAndLower')
          # Only Number, Symbol and All lower
-         # if hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('Next_OnlySymbolNumberAndUpper')
+         if hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append('Next_OnlySymbolNumberAndUpper')
 
 
-         # if re.search('^[(]',tNext): tokenFeatures.append('Next_beginWith(')
+         # if re.search('^(',tNext): tokenFeatures.append('Next_beginWith(')
       else:
          tokenFeatures.append("EoS")
     
