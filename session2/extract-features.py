@@ -67,12 +67,12 @@ def get_features(t,tokenFeatures,featurePrefx):
    hasSymbol= True if re.search('[-,()/+]+',t)else False
    AllUpper = True if t.isupper() else False
    AllLower = True if t.islower() else False
-   AllNumber= True if re.search('^[0-9]+$',t) else False
-   isTitle  = True if t[0].isupper() else False
+   # AllNumber= True if re.search('^[0-9]+$',t) else False
+   isTitle  = True if len(t)>1 and t[0].isupper() and t[1].islower() else False
 
    if AllUpper: tokenFeatures.append(f'{featurePrefx}=AllUpper')
    if AllLower: tokenFeatures.append(f'{featurePrefx}=AllLower')
-   if AllNumber:tokenFeatures.append(f'{featurePrefx}=AllNumber')
+   # if AllNumber:tokenFeatures.append(f'{featurePrefx}=AllNumber')
    if isTitle : tokenFeatures.append(f'{featurePrefx}=isTitle')
    if hasUpper: tokenFeatures.append(f'{featurePrefx}=hasUpper')
    if hasLower: tokenFeatures.append(f'{featurePrefx}=hasLower')
@@ -96,8 +96,8 @@ def get_features(t,tokenFeatures,featurePrefx):
    if t[0]=='(': tokenFeatures.append(f'{featurePrefx}=beginWith(')
    if t[-1]==')': tokenFeatures.append(f'{featurePrefx}=endWith)')
    if '-' in t: tokenFeatures.append(f'{featurePrefx}=has-')
-   # if re.search('^[0-9]+',t): tokenFeatures.append(f'{featurePrefx}=beginWithNumber')
-
+   if re.search('^[0-9]',t): tokenFeatures.append(f'{featurePrefx}=beginWithNumber')
+   # if re.search('[0-9]$',t): tokenFeatures.append(f'{featurePrefx}=endWithNumber')
 
 def extract_features(tokens) :
 
