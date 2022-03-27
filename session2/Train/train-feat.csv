@@ -20,7 +20,7 @@ Drug_	Freq [16]	('phenobarbital', 49)
 Drug_	Freq [17]	('fluvoxamine', 43)
 Drug_	Freq [18]	('Aprepitant', 42)
 Drug_	Freq [19]	('morphine', 40)
-Drug_	False Negative	41
+Drug_	False Negative	49
 Drug_	FN [0]	tricyclic
 Drug_	FN [1]	antidepressants
 Drug_	FN [2]	CYP3A4
@@ -32,36 +32,44 @@ Drug_	FN [7]	CHOLESTYRAMINE
 Drug_	FN [8]	antiarrhythmics
 Drug_	FN [9]	gold
 Drug_	FN [10]	blockers
-Drug_	FN [11]	5-FU
-Drug_	FN [12]	Soriatane
-Drug_	FN [13]	nondepolarizing
-Drug_	FN [14]	diuretic
-Drug_	FN [15]	sulfonylurea
-Drug_	FN [16]	anticoagulant
-Drug_	FN [17]	benzodiazepines
-Drug_	FN [18]	antidepressant
-Drug_	FN [19]	thyroid
-Drug_	FN [20]	barbiturates
-Drug_	FN [21]	CNS
-Drug_	FN [22]	depressants
-Drug_	FN [23]	sympathomimetic
-Drug_	FN [24]	anesthetics
-Drug_	FN [25]	drug
-Drug_	FN [26]	NTG
-Drug_	FN [27]	T4
-Drug_	FN [28]	T3
-Drug_	FN [29]	beta-adrenergic
-Drug_	FN [30]	blocking
-Drug_	FN [31]	Colchicine
-Drug_	FN [32]	antibiotics
-Drug_	FN [33]	penicillins
-Drug_	FN [34]	BREVIBLOC
-Drug_	FN [35]	antidiabetic
-Drug_	FN [36]	HMG-CoA
-Drug_	FN [37]	reductase
-Drug_	FN [38]	inhibitor
-Drug_	FN [39]	Telithromycin
-Drug_	FN [40]	Nefazodone
+Drug_	FN [11]	antihypertensive
+Drug_	FN [12]	5-FU
+Drug_	FN [13]	Soriatane
+Drug_	FN [14]	nondepolarizing
+Drug_	FN [15]	THC
+Drug_	FN [16]	INH
+Drug_	FN [17]	diuretic
+Drug_	FN [18]	sulfonylurea
+Drug_	FN [19]	EPO
+Drug_	FN [20]	anticoagulant
+Drug_	FN [21]	veratrum
+Drug_	FN [22]	alkaloids
+Drug_	FN [23]	ASA
+Drug_	FN [24]	benzodiazepines
+Drug_	FN [25]	R-
+Drug_	FN [26]	TAO
+Drug_	FN [27]	antidepressant
+Drug_	FN [28]	thyroid
+Drug_	FN [29]	barbiturates
+Drug_	FN [30]	CNS
+Drug_	FN [31]	depressants
+Drug_	FN [32]	sympathomimetic
+Drug_	FN [33]	anesthetics
+Drug_	FN [34]	drug
+Drug_	FN [35]	NTG
+Drug_	FN [36]	toxin
+Drug_	FN [37]	T4
+Drug_	FN [38]	T3
+Drug_	FN [39]	beta-adrenergic
+Drug_	FN [40]	blocking
+Drug_	FN [41]	Colchicine
+Drug_	FN [42]	KCl
+Drug_	FN [43]	antibiotics
+Drug_	FN [44]	penicillins
+Drug_	FN [45]	BREVIBLOC
+Drug_	FN [46]	antidiabetic
+Drug_	FN [47]	Telithromycin
+Drug_	FN [48]	Nefazodone
 Drug_	False Positive	0
 Drug_	FreqPrfx [0]	('acid', 341)
 Drug_	FreqPrfx [1]	('phe', 213)
@@ -138,7 +146,7 @@ Drug_	FreqLen [21]	0.0%
 Drug_	FreqLen [22]	0.0%
 Drug_	AllUpper	1.7%
 Drug_	AllLower	81.9%
-Drug_	BUpper	15.6%
+Drug_	Title	15.6%
 Drug_	Hasupper	0.7%
 Drug_	Hassymbols	1.5%
 Drug_	Hasnumbers	1.0%
@@ -164,8 +172,9 @@ DrugN	Freq [16]	('2-methyl-1,3-thiazol-4-yl', 8)
 DrugN	Freq [17]	('ethynyl', 8)
 DrugN	Freq [18]	(']', 8)
 DrugN	Freq [19]	('NaCMC', 8)
-DrugN	False Negative	1
-DrugN	FN [0]	imexon
+DrugN	False Negative	2
+DrugN	FN [0]	iron
+DrugN	FN [1]	imexon
 DrugN	False Positive	0
 DrugN	FreqPrfx [0]	('(', 225)
 DrugN	FreqPrfx [1]	(')', 225)
@@ -253,7 +262,7 @@ DrugN	FreqLen [45]	0.7%
 ['1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine', '1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine', '1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine', '1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine', '1-methyl-4-phenyl-1,2,3,4-tetrahydropyridine']
 DrugN	AllUpper	23.6%
 DrugN	AllLower	45.8%
-DrugN	BUpper	8.2%
+DrugN	Title	8.2%
 DrugN	Hasupper	22.5%
 DrugN	Hassymbols	34.4%
 DrugN	Hasnumbers	16.2%
@@ -348,7 +357,7 @@ Brand	FreqLen [14]	0.4%
 Brand	FreqLen [15]	0.1%
 Brand	AllUpper	57.9%
 Brand	AllLower	5.3%
-Brand	BUpper	35.7%
+Brand	Title	35.7%
 Brand	Hasupper	1.2%
 Brand	Hassymbols	1.0%
 Brand	Hasnumbers	0.7%
@@ -374,26 +383,28 @@ Group	Freq [16]	('antihistamines', 39)
 Group	Freq [17]	('blocking', 38)
 Group	Freq [18]	('phenothiazines', 36)
 Group	Freq [19]	('antacids', 35)
-Group	False Negative	19
+Group	False Negative	21
 Group	FN [0]	decarboxylase
 Group	FN [1]	Oxidase
-Group	FN [2]	centrally
-Group	FN [3]	acting
-Group	FN [4]	magnesium
-Group	FN [5]	broad-spectrum
-Group	FN [6]	MAO-B
-Group	FN [7]	antiestrogen
-Group	FN [8]	phenylbutazone
-Group	FN [9]	quinidine
-Group	FN [10]	mu-
+Group	FN [2]	magnesium
+Group	FN [3]	MAO-B
+Group	FN [4]	antiestrogen
+Group	FN [5]	phenylbutazone
+Group	FN [6]	quinidine
+Group	FN [7]	mu-
+Group	FN [8]	delta
+Group	FN [9]	1
+Group	FN [10]	-
 Group	FN [11]	bacitracin
-Group	FN [12]	Antiinflammatory
-Group	FN [13]	Ca
-Group	FN [14]	2+
-Group	FN [15]	antituberculosis
-Group	FN [16]	antithrombotic
-Group	FN [17]	Catecholamine-depleting
-Group	FN [18]	anti-parkinsonian
+Group	FN [12]	POC
+Group	FN [13]	Antiinflammatory
+Group	FN [14]	Ca
+Group	FN [15]	2+
+Group	FN [16]	antituberculosis
+Group	FN [17]	antithrombotic
+Group	FN [18]	Catecholamine-depleting
+Group	FN [19]	penicillin
+Group	FN [20]	anti-parkinsonian
 Group	False Positive	0
 Group	FreqPrfx [0]	('ant', 658)
 Group	FreqPrfx [1]	('anti', 572)
@@ -474,7 +485,7 @@ Group	FreqLen [25]	0.1%
 Group	FreqLen [27]	0.0%
 Group	AllUpper	6.8%
 Group	AllLower	78.8%
-Group	BUpper	13.2%
+Group	Title	13.2%
 Group	Hasupper	1.2%
 Group	Hassymbols	7.0%
 Group	Hasnumbers	1.1%
@@ -527,7 +538,7 @@ Other	FreqLen [61]	0.0%
 ['1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine/vehicle-treated', '1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine/vehicle-treated', '1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine/vehicle-treated']
 Other	AllUpper	2.0%
 Other	AllLower	75.1%
-Other	BUpper	5.4%
+Other	Title	5.4%
 Other	Hasupper	17.5%
 Other	Hassymbols	10.1%
 Other	Hasnumbers	3.4%

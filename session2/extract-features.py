@@ -45,18 +45,18 @@ def get_tag(token, spans) :
 def get_features(t,tokenFeatures,featurePrefx):
    tokenFeatures.append(f"{featurePrefx}={t}")
    tokenFeatures.append(f"{featurePrefx}LC={t.lower()}")
-   # tokenFeatures.append('formLen={len(t)}')
-   if len(t)<=3:
-      tokenFeatures.append(f'{featurePrefx}Len=Less{len(t)}')
-   elif len(t)<=6:
-      tokenFeatures.append(f'{featurePrefx}Len=4to{len(t)}')
+   # tokenFeatures.append(f'{featurePrefx}Len={len(t)}')
+   # if len(t)<=3:
+   #    tokenFeatures.append(f'{featurePrefx}Len={len(t)}')
+   if len(t)<=6:
+      tokenFeatures.append(f'{featurePrefx}Len={len(t)}')
    elif len(t)<=13:
       tokenFeatures.append(f'{featurePrefx}Len=7to13')
    elif len(t)<=20:
-      tokenFeatures.append(f'{featurePrefx}Len=14to{len(t)}')
+      tokenFeatures.append(f'{featurePrefx}Len={len(t)}')
    else:
       tokenFeatures.append(f'{featurePrefx}Len=More')
-   for i in [3,4,5,6,7,8]:
+   for i in [3,4,5,6,7]:
       if len(t)>i:
          tokenFeatures.append(f"{featurePrefx}prf{i}={t[:i]}")
          tokenFeatures.append(f"{featurePrefx}suf{i}={t[-i:]}")
@@ -82,11 +82,11 @@ def get_features(t,tokenFeatures,featurePrefx):
    # Has both Number and Symbos
    if hasNumber and hasSymbol: tokenFeatures.append(f'{featurePrefx}=BothNumberAndSymbol')
    # Only Number and All upper
-   if hasNumber and not hasLower and not hasSymbol and hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlyNumberAndUpper')
+   # if hasNumber and not hasLower and not hasSymbol and hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlyNumberAndUpper')
    # Only Number and All lower
    # if hasNumber and hasLower and not hasSymbol and not hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlyNumberAndLower')
    # Only Symbol and All upper
-   if not hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlySymbolAndUpper')
+   # if not hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlySymbolAndUpper')
    # Only Symbol and All lower
    # if not hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlySymbolAndLower')
    # Only Number, Symbol and All lower

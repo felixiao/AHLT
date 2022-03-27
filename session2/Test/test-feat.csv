@@ -20,7 +20,7 @@ Drug_	Freq [16]	('sodium', 18)
 Drug_	Freq [17]	('methotrexate', 18)
 Drug_	Freq [18]	('felbamate', 18)
 Drug_	Freq [19]	('ketoprofen', 18)
-Drug_	False Negative	116
+Drug_	False Negative	117
 Drug_	FN [0]	CYP3A4
 Drug_	FN [1]	fulvestrant
 Drug_	FN [2]	cobalt
@@ -42,162 +42,151 @@ Drug_	FN [17]	potassium
 Drug_	FN [18]	antithrombin
 Drug_	FN [19]	III
 Drug_	FN [20]	aspirin
-Drug_	FN [21]	growth
-Drug_	FN [22]	hormone
-Drug_	FN [23]	human
-Drug_	FN [24]	Albuterol
-Drug_	FN [25]	CYP2C9
-Drug_	FN [26]	drugs
-Drug_	FN [27]	anticoagulant
-Drug_	FN [28]	macrolide
-Drug_	FN [29]	antibiotics
-Drug_	FN [30]	diuretics
-Drug_	FN [31]	gestodene
-Drug_	FN [32]	IDV
-Drug_	FN [33]	Co
-Drug_	FN [34]	Cobalt
-Drug_	FN [35]	A
-Drug_	FN [36]	clidinium
-Drug_	FN [37]	antiretroviral
-Drug_	FN [38]	nucleoside
-Drug_	FN [39]	analogues
-Drug_	FN [40]	gold
-Drug_	FN [41]	descarboethoxyloratadine
-Drug_	FN [42]	MPA
-Drug_	FN [43]	Levosimendan
-Drug_	FN [44]	carvedilol
-Drug_	FN [45]	Etomidate
-Drug_	FN [46]	Human
-Drug_	FN [47]	misoprostol
-Drug_	FN [48]	doxepin
-Drug_	FN [49]	Deferasirox
-Drug_	FN [50]	cromolyn
-Drug_	FN [51]	Sorafenib
+Drug_	FN [21]	Descarboethoxyloratadine
+Drug_	FN [22]	growth
+Drug_	FN [23]	hormone
+Drug_	FN [24]	human
+Drug_	FN [25]	Albuterol
+Drug_	FN [26]	CYP2C9
+Drug_	FN [27]	drugs
+Drug_	FN [28]	anticoagulant
+Drug_	FN [29]	macrolide
+Drug_	FN [30]	antibiotics
+Drug_	FN [31]	diuretics
+Drug_	FN [32]	5-FU
+Drug_	FN [33]	gestodene
+Drug_	FN [34]	IDV
+Drug_	FN [35]	Co
+Drug_	FN [36]	Cobalt
+Drug_	FN [37]	A
+Drug_	FN [38]	clidinium
+Drug_	FN [39]	antiretroviral
+Drug_	FN [40]	nucleoside
+Drug_	FN [41]	analogues
+Drug_	FN [42]	gold
+Drug_	FN [43]	descarboethoxyloratadine
+Drug_	FN [44]	MPA
+Drug_	FN [45]	Levosimendan
+Drug_	FN [46]	carvedilol
+Drug_	FN [47]	Etomidate
+Drug_	FN [48]	Human
+Drug_	FN [49]	misoprostol
+Drug_	FN [50]	Deferasirox
+Drug_	FN [51]	cromolyn
 Drug_	FN [52]	tricyclic
 Drug_	FN [53]	antidepressants
 Drug_	FN [54]	antihypertensives
 Drug_	FN [55]	CYP1A2
 Drug_	FN [56]	Immunosuppressives
-Drug_	FN [57]	HMG-CoA
-Drug_	FN [58]	Reductase
-Drug_	FN [59]	Cardiac
-Drug_	FN [60]	glycosides
-Drug_	FN [61]	digitalis
-Drug_	FN [62]	Antiarrhythmics
-Drug_	FN [63]	drug
-Drug_	FN [64]	Antihypertensives
-Drug_	FN [65]	channel
-Drug_	FN [66]	Anticoagulants
-Drug_	FN [67]	Antibiotics
-Drug_	FN [68]	anesthesia
+Drug_	FN [57]	Reductase
+Drug_	FN [58]	Cardiac
+Drug_	FN [59]	glycosides
+Drug_	FN [60]	digitalis
+Drug_	FN [61]	Antiarrhythmics
+Drug_	FN [62]	drug
+Drug_	FN [63]	Antihypertensives
+Drug_	FN [64]	channel
+Drug_	FN [65]	Anticoagulants
+Drug_	FN [66]	Antibiotics
+Drug_	FN [67]	anesthesia
+Drug_	FN [68]	Dextromethorphan
 Drug_	FN [69]	Fluoroquinolones
 Drug_	FN [70]	fluoroquinolones
 Drug_	FN [71]	Anesthetic
-Drug_	FN [72]	SALICYLIC
-Drug_	FN [73]	ACID
-Drug_	FN [74]	thiopental
-Drug_	FN [75]	thyroxine
-Drug_	FN [76]	CBZ
-Drug_	FN [77]	Felbamate
-Drug_	FN [78]	muromonab-CD3
-Drug_	FN [79]	MEPERIDINE
-Drug_	FN [80]	ALCOHOL
-Drug_	FN [81]	corticosteroid
-Drug_	FN [82]	CaNa
-Drug_	FN [83]	2
-Drug_	FN [84]	EDTA
-Drug_	FN [85]	Succimer
-Drug_	FN [86]	succimer
-Drug_	FN [87]	antacids
-Drug_	FN [88]	nefazadone
-Drug_	FN [89]	zafirlukast
-Drug_	FN [90]	medroxyprogesterone
-Drug_	FN [91]	EACA
-Drug_	FN [92]	dipyrone
-Drug_	FN [93]	Nonsteroidal
-Drug_	FN [94]	Antiinflammatory
-Drug_	FN [95]	Aspirin
-Drug_	FN [96]	nonsteroidal
-Drug_	FN [97]	anti-inflammatory
-Drug_	FN [98]	ACTH
-Drug_	FN [99]	thiazide
-Drug_	FN [100]	Prednisolone
-Drug_	FN [101]	ETHANOL
-Drug_	FN [102]	salts
-Drug_	FN [103]	B6
+Drug_	FN [72]	I.V.
+Drug_	FN [73]	SALICYLIC
+Drug_	FN [74]	ACID
+Drug_	FN [75]	thiopental
+Drug_	FN [76]	thyroxine
+Drug_	FN [77]	CBZ
+Drug_	FN [78]	Felbamate
+Drug_	FN [79]	toxin
+Drug_	FN [80]	muromonab-CD3
+Drug_	FN [81]	acetic
+Drug_	FN [82]	N-diethyl-m-toluamide
+Drug_	FN [83]	MEPERIDINE
+Drug_	FN [84]	ALCOHOL
+Drug_	FN [85]	corticosteroid
+Drug_	FN [86]	CaNa
+Drug_	FN [87]	2
+Drug_	FN [88]	EDTA
+Drug_	FN [89]	Succimer
+Drug_	FN [90]	succimer
+Drug_	FN [91]	antacids
+Drug_	FN [92]	nefazadone
+Drug_	FN [93]	zafirlukast
+Drug_	FN [94]	medroxyprogesterone
+Drug_	FN [95]	EACA
+Drug_	FN [96]	Nonsteroidal
+Drug_	FN [97]	Antiinflammatory
+Drug_	FN [98]	Aspirin
+Drug_	FN [99]	nonsteroidal
+Drug_	FN [100]	anti-inflammatory
+Drug_	FN [101]	a-methyldopa
+Drug_	FN [102]	thiazide
+Drug_	FN [103]	salts
 Drug_	FN [104]	cardioplegic
 Drug_	FN [105]	solutions
-Drug_	FN [106]	polystyrene
-Drug_	FN [107]	sulfonate
-Drug_	FN [108]	thiocyanate
-Drug_	FN [109]	perchlorate
-Drug_	FN [110]	somatrem
-Drug_	FN [111]	activated
-Drug_	FN [112]	charcoal
-Drug_	FN [113]	levonorgesterol
-Drug_	FN [114]	B-12
-Drug_	FN [115]	histamine
-Drug_	False Positive	60
+Drug_	FN [106]	thiocyanate
+Drug_	FN [107]	perchlorate
+Drug_	FN [108]	6-mercaptopurine
+Drug_	FN [109]	Pertechnetate
+Drug_	FN [110]	Tc99m
+Drug_	FN [111]	somatrem
+Drug_	FN [112]	Mofetil
+Drug_	FN [113]	activated
+Drug_	FN [114]	charcoal
+Drug_	FN [115]	levonorgesterol
+Drug_	FN [116]	B-12
+Drug_	False Positive	48
 Drug_	FP [0]	piperine
 Drug_	FP [1]	ProAmatine
 Drug_	FP [2]	Misonidazole
-Drug_	FP [3]	Nutropin
-Drug_	FP [4]	Metopirone
+Drug_	FP [3]	Metopirone
+Drug_	FP [4]	misonidazole
 Drug_	FP [5]	nitrosourea
-Drug_	FP [6]	quinpirole
-Drug_	FP [7]	epoxide
-Drug_	FP [8]	3-hydroxy-1,4-benzodiazepine
-Drug_	FP [9]	phenyl-butazone
-Drug_	FP [10]	testosterone
-Drug_	FP [11]	glycoside
-Drug_	FP [12]	Monoamine
-Drug_	FP [13]	Oxidase
-Drug_	FP [14]	Antimigraine
-Drug_	FP [15]	Zimelidine
-Drug_	FP [16]	misonidazole
-Drug_	FP [17]	norketamine
-Drug_	FP [18]	phenazepam
-Drug_	FP [19]	Urinary
-Drug_	FP [20]	acidifying
-Drug_	FP [21]	metanephrine
-Drug_	FP [22]	normetanephrine
-Drug_	FP [23]	acetaminophen/phenobarbital
-Drug_	FP [24]	acetaminophen/theophylline
-Drug_	FP [25]	lidocaine/quinidine
-Drug_	FP [26]	phenobarbital/acetaminophen
-Drug_	FP [27]	phenobarbital/valproic
-Drug_	FP [28]	quinidine/lidocaine
-Drug_	FP [29]	theophylline/acetaminophen
-Drug_	FP [30]	acid/phenobarbital
-Drug_	FP [31]	secobarbitone
-Drug_	FP [32]	N-desmethylclozapine
-Drug_	FP [33]	N-oxide
-Drug_	FP [34]	epididymides
-Drug_	FP [35]	Piperine
-Drug_	FP [36]	Tetracycline
-Drug_	FP [37]	HCTZ/triamterene
-Drug_	FP [38]	conjugated
-Drug_	FP [39]	estrogens
-Drug_	FP [40]	penicillins
-Drug_	FP [41]	Penicillin
-Drug_	FP [42]	Clofibric
-Drug_	FP [43]	clofibric
-Drug_	FP [44]	rifamycins
-Drug_	FP [45]	ginseng
-Drug_	FP [46]	b-acetyldigoxin
-Drug_	FP [47]	neostgmine
-Drug_	FP [48]	supine
-Drug_	FP [49]	desglymidodrine
-Drug_	FP [50]	interferon
-Drug_	FP [51]	Somatrem/Somatropin
-Drug_	FP [52]	magnesium-aluminum
-Drug_	FP [53]	Acyclovir/Ganciclovir
-Drug_	FP [54]	acyclovir/ganciclovir
-Drug_	FP [55]	Azathioprine/Mycophenolate
-Drug_	FP [56]	1-aminobenzotriazole
-Drug_	FP [57]	diethyldithiocarbamate~tranylcypromine
-Drug_	FP [58]	Furafylline
-Drug_	FP [59]	sulfaphenazole
+Drug_	FP [6]	picrotoxin
+Drug_	FP [7]	Nutropin
+Drug_	FP [8]	quinpirole
+Drug_	FP [9]	epoxide
+Drug_	FP [10]	phenyl-butazone
+Drug_	FP [11]	testosterone
+Drug_	FP [12]	glycoside
+Drug_	FP [13]	Monoamine
+Drug_	FP [14]	Oxidase
+Drug_	FP [15]	gelatin
+Drug_	FP [16]	OVCON-35
+Drug_	FP [17]	Zimelidine
+Drug_	FP [18]	norketamine
+Drug_	FP [19]	phenazepam
+Drug_	FP [20]	Urinary
+Drug_	FP [21]	acidifying
+Drug_	FP [22]	metanephrine
+Drug_	FP [23]	normetanephrine
+Drug_	FP [24]	platinum
+Drug_	FP [25]	acid/phenobarbital
+Drug_	FP [26]	secobarbitone
+Drug_	FP [27]	N-oxide
+Drug_	FP [28]	epididymides
+Drug_	FP [29]	Piperine
+Drug_	FP [30]	reductase
+Drug_	FP [31]	may
+Drug_	FP [32]	Tetracycline
+Drug_	FP [33]	conjugated
+Drug_	FP [34]	estrogens
+Drug_	FP [35]	penicillins
+Drug_	FP [36]	Penicillin
+Drug_	FP [37]	Clofibric
+Drug_	FP [38]	clofibric
+Drug_	FP [39]	rifamycins
+Drug_	FP [40]	ginseng
+Drug_	FP [41]	b-acetyldigoxin
+Drug_	FP [42]	neostgmine
+Drug_	FP [43]	desglymidodrine
+Drug_	FP [44]	interferon
+Drug_	FP [45]	magnesium-aluminum
+Drug_	FP [46]	Furafylline
+Drug_	FP [47]	sulfaphenazole
 Drug_	FreqPrfx [0]	('acid', 84)
 Drug_	FreqPrfx [1]	('HCl', 70)
 Drug_	FreqPrfx [2]	('phe', 68)
@@ -273,7 +262,7 @@ Drug_	FreqLen [22]	0.0%
 Drug_	FreqLen [25]	0.1%
 Drug_	AllUpper	3.4%
 Drug_	AllLower	79.2%
-Drug_	BUpper	17.3%
+Drug_	Title	17.3%
 Drug_	Hasupper	0.1%
 Drug_	Hassymbols	1.2%
 Drug_	Hasnumbers	1.4%
@@ -299,7 +288,7 @@ DrugN	Freq [16]	('ropivacaine', 1)
 DrugN	Freq [17]	('Zimelidine', 1)
 DrugN	Freq [18]	('norketamine', 1)
 DrugN	Freq [19]	('phenazepam', 1)
-DrugN	False Negative	38
+DrugN	False Negative	37
 DrugN	FN [0]	I
 DrugN	FN [1]	precocene
 DrugN	FN [2]	quinpirole
@@ -321,34 +310,35 @@ DrugN	FN [17]	phenazepam
 DrugN	FN [18]	phenibut
 DrugN	FN [19]	amizyl
 DrugN	FN [20]	Carbamazepine
-DrugN	FN [21]	N-desmethylclozapine
-DrugN	FN [22]	clozapine
-DrugN	FN [23]	N-oxide
-DrugN	FN [24]	Piperine
-DrugN	FN [25]	cross-reacting
-DrugN	FN [26]	material
-DrugN	FN [27]	197
-DrugN	FN [28]	Clofibric
-DrugN	FN [29]	clofibric
-DrugN	FN [30]	desglymidodrine
-DrugN	FN [31]	1
-DrugN	FN [32]	2
-DrugN	FN [33]	angiotensins
-DrugN	FN [34]	1-aminobenzotriazole
-DrugN	FN [35]	Precocene
-DrugN	FN [36]	Furafylline
-DrugN	FN [37]	sulfaphenazole
-DrugN	False Positive	10
+DrugN	FN [21]	clozapine
+DrugN	FN [22]	N-oxide
+DrugN	FN [23]	Piperine
+DrugN	FN [24]	cross-reacting
+DrugN	FN [25]	material
+DrugN	FN [26]	197
+DrugN	FN [27]	Clofibric
+DrugN	FN [28]	clofibric
+DrugN	FN [29]	desglymidodrine
+DrugN	FN [30]	1
+DrugN	FN [31]	2
+DrugN	FN [32]	angiotensins
+DrugN	FN [33]	1-aminobenzotriazole
+DrugN	FN [34]	Precocene
+DrugN	FN [35]	Furafylline
+DrugN	FN [36]	sulfaphenazole
+DrugN	False Positive	12
 DrugN	FP [0]	descarboethoxyloratadine
-DrugN	FP [1]	Loratadine
-DrugN	FP [2]	nortriptyline
-DrugN	FP [3]	CCNU
-DrugN	FP [4]	vanillylmandelic
+DrugN	FP [1]	Descarboethoxyloratadine
+DrugN	FP [2]	CCNU
+DrugN	FP [3]	vanillylmandelic
+DrugN	FP [4]	5-FU
 DrugN	FP [5]	phosphate
-DrugN	FP [6]	sodium
-DrugN	FP [7]	polystyrene
-DrugN	FP [8]	sulfonate
-DrugN	FP [9]	perchlorate
+DrugN	FP [6]	N-diethyl-m-toluamide
+DrugN	FP [7]	SEDATIVE-HYPNOTICS
+DrugN	FP [8]	HB-EGF
+DrugN	FP [9]	EGFR
+DrugN	FP [10]	3A5-7
+DrugN	FP [11]	perchlorate
 DrugN	FreqPrfx [0]	('I', 50)
 DrugN	FreqPrfx [1]	('ABT', 15)
 DrugN	FreqPrfx [2]	('MPA', 12)
@@ -417,7 +407,7 @@ DrugN	FreqLen [16]	1.1%
 DrugN	FreqLen [21]	3.3%
 DrugN	AllUpper	24.4%
 DrugN	AllLower	58.9%
-DrugN	BUpper	13.3%
+DrugN	Title	13.3%
 DrugN	Hasupper	3.3%
 DrugN	Hassymbols	6.7%
 DrugN	Hasnumbers	12.2%
@@ -443,47 +433,42 @@ Brand	Freq [16]	('TRACRIUM', 4)
 Brand	Freq [17]	('Proquin', 4)
 Brand	Freq [18]	('XR', 4)
 Brand	Freq [19]	('FOSCAVIR', 4)
-Brand	False Negative	30
-Brand	FN [0]	Norpace
-Brand	FN [1]	XR
-Brand	FN [2]	ALPHAGAN
-Brand	FN [3]	P
-Brand	FN [4]	ATROVENT
-Brand	FN [5]	Nutropin
-Brand	FN [6]	Metopirone
-Brand	FN [7]	AGGRASTAT
-Brand	FN [8]	depo-subQ
-Brand	FN [9]	provera
-Brand	FN [10]	104
-Brand	FN [11]	ELOXATIN
-Brand	FN [12]	CHEMET
-Brand	FN [13]	Campath
-Brand	FN [14]	Gemzar
-Brand	FN [15]	Elavil
-Brand	FN [16]	Sinequan
-Brand	FN [17]	Pamelor
-Brand	FN [18]	Tofranil
-Brand	FN [19]	Vivactil
-Brand	FN [20]	Norpramin
-Brand	FN [21]	ASPIRIN
-Brand	FN [22]	DISALCID
-Brand	FN [23]	CR
-Brand	FN [24]	secobarbitone
-Brand	FN [25]	sodium
-Brand	FN [26]	clindamycin
-Brand	FN [27]	ISUPREL
-Brand	FN [28]	aspirins
-Brand	FN [29]	MAXIPIME
-Brand	False Positive	9
+Brand	False Negative	14
+Brand	FN [0]	XR
+Brand	FN [1]	P
+Brand	FN [2]	ATROVENT
+Brand	FN [3]	Metopirone
+Brand	FN [4]	depo-subQ
+Brand	FN [5]	provera
+Brand	FN [6]	104
+Brand	FN [7]	OVCON-35
+Brand	FN [8]	DISALCID
+Brand	FN [9]	CR
+Brand	FN [10]	secobarbitone
+Brand	FN [11]	sodium
+Brand	FN [12]	clindamycin
+Brand	FN [13]	aspirins
+Brand	False Positive	20
 Brand	FP [0]	HIVID
 Brand	FP [1]	HB-EGF
-Brand	FP [2]	Clostridium
-Brand	FP [3]	ZDV
-Brand	FP [4]	Epidural
-Brand	FP [5]	gelatin
-Brand	FP [6]	HAART
-Brand	FP [7]	GH
-Brand	FP [8]	PMs
+Brand	FP [2]	HAART
+Brand	FP [3]	CRM197
+Brand	FP [4]	DIAMOND
+Brand	FP [5]	MODIFIED
+Brand	FP [6]	INCLUDING
+Brand	FP [7]	Clostridium
+Brand	FP [8]	Epidural
+Brand	FP [9]	Levosimendan
+Brand	FP [10]	Scotland
+Brand	FP [11]	HIV-NHL
+Brand	FP [12]	CHOP-HAART
+Brand	FP [13]	BARBITURATES
+Brand	FP [14]	TRICYCLIC
+Brand	FP [15]	ALCOHOL
+Brand	FP [16]	HYPOTENSION
+Brand	FP [17]	Ketostix
+Brand	FP [18]	RT-PCR
+Brand	FP [19]	NUTRITION
 Brand	FreqPrfx [0]	('asp', 31)
 Brand	FreqPrfx [1]	('aspi', 31)
 Brand	FreqPrfx [2]	('aspir', 31)
@@ -549,7 +534,7 @@ Brand	FreqLen [12]	0.3%
 Brand	FreqLen [14]	0.3%
 Brand	AllUpper	49.1%
 Brand	AllLower	12.5%
-Brand	BUpper	36.9%
+Brand	Title	36.9%
 Brand	Hasupper	1.4%
 Brand	Hassymbols	2.4%
 Brand	Hasnumbers	1.0%
@@ -575,107 +560,109 @@ Group	Freq [16]	('vitamin', 11)
 Group	Freq [17]	('Amphetamines', 11)
 Group	Freq [18]	('salicylate', 10)
 Group	Freq [19]	('anesthetics', 9)
-Group	False Negative	54
+Group	False Negative	56
 Group	FN [0]	combination
 Group	FN [1]	nitrosourea
 Group	FN [2]	,
 Group	FN [3]	inhaled
-Group	FN [4]	highly
-Group	FN [5]	active
-Group	FN [6]	Combination
-Group	FN [7]	potassium
-Group	FN [8]	potassium-depleting
+Group	FN [4]	of
+Group	FN [5]	highly
+Group	FN [6]	active
+Group	FN [7]	AED
+Group	FN [8]	Combination
 Group	FN [9]	Alpha-agonists
 Group	FN [10]	anxiolytic
 Group	FN [11]	3-hydroxy-1,4-benzodiazepine
 Group	FN [12]	cytostatic
 Group	FN [13]	sedating
 Group	FN [14]	glycoside
-Group	FN [15]	Monoamine
-Group	FN [16]	Oxidase
-Group	FN [17]	I
-Group	FN [18]	amide-type
-Group	FN [19]	local
-Group	FN [20]	nitrosoureas
-Group	FN [21]	alkalinizing
-Group	FN [22]	SALICYLATE
-Group	FN [23]	DRUGS
-Group	FN [24]	anion
-Group	FN [25]	exchange
-Group	FN [26]	Oral
-Group	FN [27]	NARCOTIC
-Group	FN [28]	ANALGESICS
-Group	FN [29]	ANESTHETICS
-Group	FN [30]	PHENOTHIAZINES
-Group	FN [31]	TRANQUILIZERS
-Group	FN [32]	SEDATIVE-HYPNOTICS
-Group	FN [33]	BARBITURATES
-Group	FN [34]	TRICYCLIC
-Group	FN [35]	ANTIDEPRESSANTS
-Group	FN [36]	DEPRESSANTS
-Group	FN [37]	antibodies
-Group	FN [38]	anticancer
-Group	FN [39]	Tetracycline
-Group	FN [40]	anti-ulcer
-Group	FN [41]	depleting
-Group	FN [42]	cannabinoids
-Group	FN [43]	Penicillin
-Group	FN [44]	rifamycins
-Group	FN [45]	NNRTIs
-Group	FN [46]	Potassium-depleting
-Group	FN [47]	laxative
-Group	FN [48]	anabolic
-Group	FN [49]	estrogen-containing
-Group	FN [50]	iodine-containing
-Group	FN [51]	interferon
-Group	FN [52]	interleukin
-Group	FN [53]	Live
+Group	FN [15]	Short-Acting
+Group	FN [16]	Monoamine
+Group	FN [17]	Oxidase
+Group	FN [18]	beta2-agonist
+Group	FN [19]	I
+Group	FN [20]	amide-type
+Group	FN [21]	local
+Group	FN [22]	nitrosoureas
+Group	FN [23]	alkalinizing
+Group	FN [24]	SALICYLATE
+Group	FN [25]	DRUGS
+Group	FN [26]	anion
+Group	FN [27]	exchange
+Group	FN [28]	Oral
+Group	FN [29]	NARCOTIC
+Group	FN [30]	ANALGESICS
+Group	FN [31]	ANESTHETICS
+Group	FN [32]	TRANQUILIZERS
+Group	FN [33]	SEDATIVE-HYPNOTICS
+Group	FN [34]	BARBITURATES
+Group	FN [35]	TRICYCLIC
+Group	FN [36]	ANTIDEPRESSANTS
+Group	FN [37]	DEPRESSANTS
+Group	FN [38]	antibodies
+Group	FN [39]	anticancer
+Group	FN [40]	Tetracycline
+Group	FN [41]	anti-ulcer
+Group	FN [42]	depleting
+Group	FN [43]	cannabinoids
+Group	FN [44]	Penicillin
+Group	FN [45]	rifamycins
+Group	FN [46]	NNRTIs
+Group	FN [47]	Potassium-depleting
+Group	FN [48]	laxative
+Group	FN [49]	beta2
+Group	FN [50]	anabolic
+Group	FN [51]	estrogen-containing
+Group	FN [52]	iodine-containing
+Group	FN [53]	interferon
+Group	FN [54]	interleukin
+Group	FN [55]	Live
 Group	False Positive	46
 Group	FP [0]	analogues
 Group	FP [1]	-adrenergic
 Group	FP [2]	angiotensin
 Group	FP [3]	progestin
 Group	FP [4]	VIRACEPT
-Group	FP [5]	azoles
-Group	FP [6]	antiemetic
-Group	FP [7]	nucleoside
-Group	FP [8]	gold
-Group	FP [9]	beta-lactamtype
-Group	FP [10]	penicillin-type
-Group	FP [11]	stimulant
-Group	FP [12]	Blockers
-Group	FP [13]	myelosuppressive
-Group	FP [14]	antidiabetes
-Group	FP [15]	CHOP
-Group	FP [16]	one
-Group	FP [17]	antihypertensives
-Group	FP [18]	Immunosuppressives
-Group	FP [19]	Cardiac
-Group	FP [20]	-receptor
-Group	FP [21]	Fluoroquinolones
-Group	FP [22]	fluoroquinolones
-Group	FP [23]	Anesthetic
-Group	FP [24]	catecholamines
-Group	FP [25]	anticoagulents
-Group	FP [26]	anti-KS
-Group	FP [27]	iron
-Group	FP [28]	supplements
-Group	FP [29]	sedative
-Group	FP [30]	aspirins
-Group	FP [31]	ACTH
-Group	FP [32]	Herb/Nutraceutical
-Group	FP [33]	B6
+Group	FP [5]	antiemetic
+Group	FP [6]	prophylaxis
+Group	FP [7]	angiotensins
+Group	FP [8]	clonidine.It
+Group	FP [9]	nucleoside
+Group	FP [10]	beta-lactamtype
+Group	FP [11]	penicillin-type
+Group	FP [12]	stimulant
+Group	FP [13]	Blockers
+Group	FP [14]	myelosuppressive
+Group	FP [15]	C
+Group	FP [16]	antidiabetes
+Group	FP [17]	CHOP
+Group	FP [18]	one
+Group	FP [19]	antihypertensives
+Group	FP [20]	Cardiac
+Group	FP [21]	-receptor
+Group	FP [22]	Fluoroquinolones
+Group	FP [23]	azoles
+Group	FP [24]	fluoroquinolones
+Group	FP [25]	Anesthetic
+Group	FP [26]	cycles
+Group	FP [27]	serotypes
+Group	FP [28]	anticoagulents
+Group	FP [29]	anti-KS
+Group	FP [30]	iron
+Group	FP [31]	supplements
+Group	FP [32]	Antiinflammatory
+Group	FP [33]	aspirins
 Group	FP [34]	H-2
 Group	FP [35]	Antagonists
-Group	FP [36]	prophylaxis
-Group	FP [37]	withhold
-Group	FP [38]	Physiology
-Group	FP [39]	Adrenocorticoids
-Group	FP [40]	B-12
-Group	FP [41]	in
-Group	FP [42]	K
-Group	FP [43]	1
-Group	FP [44]	2
+Group	FP [36]	withhold
+Group	FP [37]	Physiology
+Group	FP [38]	B-12
+Group	FP [39]	in
+Group	FP [40]	K
+Group	FP [41]	1
+Group	FP [42]	2
+Group	FP [43]	influence
+Group	FP [44]	through
 Group	FP [45]	CYP
 Group	FreqPrfx [0]	('ant', 140)
 Group	FreqPrfx [1]	('anti', 117)
@@ -752,7 +739,7 @@ Group	FreqLen [23]	0.2%
 Group	FreqLen [29]	0.1%
 Group	AllUpper	4.1%
 Group	AllLower	77.4%
-Group	BUpper	18.0%
+Group	Title	18.0%
 Group	Hasupper	0.5%
 Group	Hassymbols	8.2%
 Group	Hasnumbers	1.2%
@@ -790,7 +777,7 @@ Other	FreqLen [39]	0.0%
 ['diethyldithiocarbamate~tranylcypromine']
 Other	AllUpper	1.7%
 Other	AllLower	75.8%
-Other	BUpper	5.4%
+Other	Title	5.4%
 Other	Hasupper	17.2%
 Other	Hassymbols	9.3%
 Other	Hasnumbers	2.8%

@@ -2508,6 +2508,7 @@ DDI-MedLine.d114.s3|36-37|RR|drug_n
 DDI-MedLine.d114.s4|50-51|RR|drug_n
 DDI-MedLine.d114.s5|47-48|RR|drug_n
 DDI-MedLine.d114.s6|57-58|RR|drug_n
+DDI-MedLine.d114.s6|77-83|InsP ( 3 )|drug_n
 DDI-MedLine.d114.s7|80-81|RR|drug_n
 DDI-MedLine.d114.s8|32-33|RR|drug_n
 DDI-MedLine.d114.s8|94-100|InsP ( 3 )|drug_n
@@ -2531,7 +2532,7 @@ DDI-DrugBank.d568.s1|81-87|alcohol|drug
 DDI-DrugBank.d568.s1|124-147|psychotropic medications|group
 DDI-DrugBank.d568.s1|161-167|alcohol|drug
 DDI-DrugBank.d568.s1|188-194|LEXAPRO|brand
-DDI-DrugBank.d568.s2|0-27|Monoamine Oxidase Inhibitors|drug
+DDI-DrugBank.d568.s2|0-27|Monoamine Oxidase Inhibitors|group
 DDI-DrugBank.d568.s2|30-34|MAOIs|group
 DDI-DrugBank.d568.s3|38-43|NSAIDs|group
 DDI-DrugBank.d568.s3|46-52|Aspirin|brand
@@ -5713,6 +5714,7 @@ DDI-MedLine.d166.s7|100-110|darbepoetin|drug
 DDI-MedLine.d166.s11|0-9|Cinacalcet|drug
 DDI-MedLine.d166.s13|64-74|darbepoetin|drug
 DDI-MedLine.d166.s14|66-72|calcium|drug
+DDI-MedLine.d166.s14|103-111|vitamin D|group
 DDI-MedLine.d166.s16|52-62|darbepoetin|drug
 DDI-MedLine.d166.s17|20-29|cinacalcet|drug
 DDI-MedLine.d166.s17|64-74|darbepoetin|drug
@@ -5742,6 +5744,7 @@ DDI-MedLine.d93.s0|26-32|alcohol|drug
 DDI-MedLine.d93.s1|0-12|Ethyl alcohol|drug
 DDI-MedLine.d93.s3|11-17|alcohol|drug
 DDI-MedLine.d93.s4|109-122|trimethyl lead|drug_n
+DDI-MedLine.d93.s4|125-127|TML|drug_n
 DDI-MedLine.d93.s5|80-86|ethanol|drug
 DDI-MedLine.d93.s6|24-30|alcohol|drug
 DDI-MedLine.d93.s6|83-89|ethanol|drug
@@ -5822,6 +5825,7 @@ DDI-DrugBank.d291.s0|16-29|Bezalip retard|brand
 DDI-DrugBank.d291.s0|146-152|Bezalip|brand
 DDI-DrugBank.d291.s0|158-171|Bezalip retard|brand
 DDI-DrugBank.d291.s0|199-233|anticoagulants of the coumarin type|group
+DDI-DrugBank.d291.s1|33-45|anticoagulant|group
 DDI-DrugBank.d291.s1|108-114|Bezalip|brand
 DDI-DrugBank.d291.s1|119-125|Bezalip|brand
 DDI-DrugBank.d291.s3|16-29|sulphonylureas|group
@@ -8784,7 +8788,6 @@ DDI-DrugBank.d325.s8|0-11|Cyclopropane|drug
 DDI-DrugBank.d325.s8|16-50|halogenated hydrocarbon anesthetics|group
 DDI-DrugBank.d325.s8|177-190|catecholamines|group
 DDI-DrugBank.d325.s8|201-208|dopamine|drug
-DDI-DrugBank.d325.s9|119-132|catecholamines|group
 DDI-DrugBank.d325.s10|66-77|dopamine HCl|drug
 DDI-DrugBank.d325.s10|101-112|cyclopropane|drug
 DDI-DrugBank.d325.s10|117-151|halogenated hydrocarbon anesthetics|group
