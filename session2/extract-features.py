@@ -42,17 +42,6 @@ def get_tag(token, spans) :
  
 ## --------- Feature extractor ----------- 
 # ## -- Extract features for each token in given sentence
-# prefixList = [#'acid','meth','warfari','phenyto','digoxin',
-#                'PCP','MHD','toxin','PTX','InsP','EGF','DZN'
-#                #'TAXOL','VIOXX','aspirin','VIDEX','INDOCIN','NIMBEX','ZETIA',
-#                #'anti','agents','drugs','MAO','inhibit','ACE','CNS','beta'
-#                ]
-
-# suffixList = [#'ine','ide','cin','acid','one','onazole','farin',
-#             'PCP','MHD','toxin','PTX','NANM','TAXOL','II'
-#             #'aspirin','VIDEX','NIMBEX','INDOCIN','RON','ZETIA',
-#             #'agents','tics','MAO','ines','ibitors','ACE','CNS','sants'
-#                ]
 
 def extract_features(tokens) :
 
@@ -65,21 +54,19 @@ def extract_features(tokens) :
       tokenFeatures.append("formLC="+t.lower())
       # tokenFeatures.append('formLen={len(t)}')
       if len(t)<=3:
-         tokenFeatures.append('formLen=ExShort')
+         tokenFeatures.append('formLen=Less3')
       elif len(t)<=6:
-         tokenFeatures.append('formLen=Short')
+         tokenFeatures.append('formLen=4to6')
       elif len(t)<=12:
-         tokenFeatures.append('formLen=Medium')
+         tokenFeatures.append('formLen=7to12')
+      elif len(t)<=20:
+         tokenFeatures.append('formLen=12to20')
       else:
-         tokenFeatures.append('formLen=Long')
-      for i in [3,4,5,6,7]:
+         tokenFeatures.append('formLen=More20')
+      for i in [3,4,5,6]:
          if len(t)>i:
             tokenFeatures.append(f"prf{i}="+t[:i])
             tokenFeatures.append(f"suf{i}="+t[-i:])
-      # for pfx in prefixList:
-      #    if pfx == t[:len(pfx)]: tokenFeatures.append(f"Pfx={pfx}")
-      # for sfx in suffixList:
-      #    if sfx == t[-len(sfx):]: tokenFeatures.append(f"Sfx={sfx}")
       
       hasUpper = True if re.search('[A-Z]+',t) else False
       hasLower = True if re.search('[a-z]+',t) else False
@@ -120,22 +107,30 @@ def extract_features(tokens) :
          tokenFeatures.append("formPrev="+tPrev)
          tokenFeatures.append("formPrevLC="+tPrev.lower())
          # tokenFeatures.append(f'LenPrev={len(tPrev)}')
+         
          if len(tPrev)<=3:
-            tokenFeatures.append('LenPrev=ExShort')
+            tokenFeatures.append('PrevLen=Less3')
          elif len(tPrev)<=6:
-            tokenFeatures.append('LenPrev=Short')
+            tokenFeatures.append('PrevLen=4to6')
          elif len(tPrev)<=12:
-            tokenFeatures.append('LenPrev=Medium')
+            tokenFeatures.append('PrevLen=7to12')
+         elif len(tPrev)<=20:
+            tokenFeatures.append('PrevLen=12to20')
          else:
-            tokenFeatures.append('LenPrev=Long')
-         for i in [3,6]:
+            tokenFeatures.append('PrevLen=More20')
+         # if len(tPrev)<=3:
+         #    tokenFeatures.append('LenPrev=ExShort')
+         # elif len(tPrev)<=6:
+         #    tokenFeatures.append('LenPrev=Short')
+         # elif len(tPrev)<=12:
+         #    tokenFeatures.append('LenPrev=Medium')
+         # else:
+         #    tokenFeatures.append('LenPrev=Long')
+         for i in [3,4,5,6]:
             if len(tPrev)>i:
                tokenFeatures.append(f"prf{i}Prev="+tPrev[:i])
                tokenFeatures.append(f"suf{i}Prev="+tPrev[-i:])
-         # for pfx in prefixList:
-         #    if pfx == tPrev[:len(pfx)]: tokenFeatures.append(f"Prev_Pfx={pfx}")
-         # for sfx in suffixList:
-         #    if sfx == tPrev[-len(sfx):]: tokenFeatures.append(f"Prev_Sfx={sfx}")
+
          hasUpper = True if re.search('[A-Z]+',tPrev) else False
          hasLower = True if re.search('[a-z]+',tPrev) else False
          hasNumber= True if re.search('[0-9]+',tPrev) else False
@@ -180,21 +175,29 @@ def extract_features(tokens) :
          tokenFeatures.append("formNextLC="+tNext.lower())
          # tokenFeatures.append(f'LenNext={len(tNext)}')
          if len(tNext)<=3:
-            tokenFeatures.append('LenNext=ExShort')
+            tokenFeatures.append('NextLen=Less3')
          elif len(tNext)<=6:
-            tokenFeatures.append('LenNext=Short')
+            tokenFeatures.append('NextLen=4to6')
          elif len(tNext)<=12:
-            tokenFeatures.append('LenNext=Medium')
+            tokenFeatures.append('NextLen=7to12')
+         elif len(tNext)<=20:
+            tokenFeatures.append('NextLen=12to20')
          else:
-            tokenFeatures.append('LenNext=Long')
-         for i in [2,4,6]:
+            tokenFeatures.append('NextLen=More20')
+
+         # if len(tNext)<=3:
+         #    tokenFeatures.append('LenNext=ExShort')
+         # elif len(tNext)<=6:
+         #    tokenFeatures.append('LenNext=Short')
+         # elif len(tNext)<=12:
+         #    tokenFeatures.append('LenNext=Medium')
+         # else:
+         #    tokenFeatures.append('LenNext=Long')
+         for i in [2,3,4,5,6]:
             if len(tNext)>i:
                tokenFeatures.append(f"prf{i}Next="+tNext[:i])
                tokenFeatures.append(f"suf{i}Next="+tNext[-i:])
-         # for pfx in prefixList:
-         #    if pfx == tNext[:len(pfx)]: tokenFeatures.append(f"Next_Pfx={pfx}")
-         # for sfx in suffixList:
-         #    if sfx == tNext[-len(sfx):]: tokenFeatures.append(f"Next_Sfx={sfx}")
+
          hasUpper = True if re.search('[A-Z]+',tNext) else False
          hasLower = True if re.search('[a-z]+',tNext) else False
          hasNumber= True if re.search('[0-9]+',tNext) else False

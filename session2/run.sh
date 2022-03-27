@@ -3,10 +3,10 @@
 BASEDIR=../
 
 # convert datasets to feature vectors
-# echo "Extracting features..."
-# python3.7 extract-features.py $BASEDIR/data/train/ > Train/train.feat
-# python3.7 extract-features.py $BASEDIR/data/devel/ > Devel/devel.feat
-# python3.7 extract-features.py $BASEDIR/data/test/ > Test/test.feat
+echo "Extracting features..."
+python3.7 extract-features.py $BASEDIR/data/train/ > Train/train.feat
+python3.7 extract-features.py $BASEDIR/data/devel/ > Devel/devel.feat
+python3.7 extract-features.py $BASEDIR/data/test/ > Test/test.feat
 
 # train CRF model
 echo "Training model..."

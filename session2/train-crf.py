@@ -46,13 +46,16 @@ if __name__ == '__main__':
     trainer.select('l2sgd', 'crf1d')
     
     # This demonstrates how to list parameters and obtain their values.    
-    trainer.set('feature.minfreq', 2) # mininum frequecy of a feature to consider it
-    trainer.set('c2', 0.01)           # coefficient for L2 regularization
-    trainer.set('delta',1e-08)
-    trainer.set('period',20)
-    trainer.set('max_iterations',2000)
+    trainer.set('feature.minfreq', 1) # mininum frequecy of a feature to consider it
+    trainer.set('c2', 0.1)           # coefficient for L2 regularization
+    trainer.set('delta',1e-10)
+    trainer.set('period',10)
+    # trainer.set('max_iterations',2000)
+    # trainer.set('feature.possible_states',1)
 
-    trainer.set('')
+    # trainer.set('calibration.eta', 0.2)
+    # trainer.set('calibration.rate', 1.5)
+
 
 
     print("Training with following parameters: ")
