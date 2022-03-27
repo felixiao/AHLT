@@ -1,8 +1,10 @@
 import csv
 from re import T
 import sys
+from matplotlib.pyplot import title, xlabel, xticks
 import numpy as np
 import re
+import matplotlib.pyplot as plt
 
 feature_file = sys.argv[1]
 
@@ -55,7 +57,7 @@ def Analysis(tokens,extractTokens, listName,topK=20):
     count_buppertokens= 0
     count_lowertokens = 0
     count_hasupper    = 0
-
+    count_cameltokens = 0
     count_hassymbols  = 0
     count_hasnumbers  = 0
 
@@ -77,6 +79,8 @@ def Analysis(tokens,extractTokens, listName,topK=20):
             count_uppertokens+=1
         elif t[0].isupper():
             count_buppertokens+=1
+        elif not t[0].isupper() and re.search('[A-Z]+',t):
+            count_cameltokens+=1
         else:
             count_hasupper+=1
         if re.search('[0-9]+',t): count_hasnumbers+=1
@@ -123,10 +127,20 @@ def Analysis(tokens,extractTokens, listName,topK=20):
     print(f'{listName}\tAllUpper\t{count_uppertokens/len(tokens):2.1%}')
     print(f'{listName}\tAllLower\t{count_lowertokens/len(tokens):2.1%}')
     print(f'{listName}\tTitle\t{count_buppertokens/len(tokens):2.1%}')
+    print(f'{listName}\tCamel\t{count_cameltokens/len(tokens):2.1%}')
     print(f'{listName}\tHasupper\t{count_hasupper/len(tokens):2.1%}')
     print(f'{listName}\tHassymbols\t{count_hassymbols/len(tokens):2.1%}')
     print(f'{listName}\tHasnumbers\t{count_hasnumbers/len(tokens):2.1%}')
+
+
+    largerthan20 =0
+    for i in range(21,len(list_length)):
+        largerthan20+=list_length[i]
+    list_length[21] = largerthan20
+    plt.bar(range(21),list_length[1:22]/len(tokens),tick_label=['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','>20'])
     
+    plt.title(listName)
+    plt.show()
 
 
 with open(feature_file+'.feat', newline='') as csvfile:
