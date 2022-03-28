@@ -80,28 +80,21 @@ def get_features(t,tokenFeatures,featurePrefx):
    if allSymbol:tokenFeatures.append(f'{featurePrefx}=allSymbol')
 
    # Compound Features: Only Symbol and all Upper
-   # Has both Number and Symbos
+      # Has both Number and Symbos
    if hasNumber and hasSymbol: tokenFeatures.append(f'{featurePrefx}=BothNumberAndSymbol')
-   # Only Number and All upper
+      # Only Number and All upper
    if hasNumber and not hasLower and not hasSymbol and hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlyNumberAndUpper')
-   # Only Number and All lower
+      # Only Number and All lower
    if hasNumber and hasLower and not hasSymbol and not hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlyNumberAndLower')
-   # Only Symbol and All lower
+      # Only Symbol and All lower
    if not hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlySymbolAndLower')
-   # Only Number, Symbol and All lower
-   # if hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlySymbolNumberAndLower')
-
-   # if not hasNumber and not hasLower and hasSymbol and hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlySymbolAndUpper')
-
+   
    # Position Features
    if t[0]=='(':  tokenFeatures.append(f'{featurePrefx}=sw(')
-   # if t[-1]==')': tokenFeatures.append(f'{featurePrefx}=ew)')
    if t[0]=='-':  tokenFeatures.append(f'{featurePrefx}=sw-')
    if t[-1]=='-': tokenFeatures.append(f'{featurePrefx}=ew-')
    if t[0]=='+':  tokenFeatures.append(f'{featurePrefx}=sw+')
-   # if t[-1]=='+': tokenFeatures.append(f'{featurePrefx}=ew+')
-   # if t[0] in range(10):  tokenFeatures.append(f'{featurePrefx}=swNumber')
-   # if t[-1] in range(10): tokenFeatures.append(f'{featurePrefx}=ewNumber')
+
 
 def extract_features(tokens) :
    # for each token, generate list of features and add it to the result
