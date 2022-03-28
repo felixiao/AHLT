@@ -53,41 +53,40 @@ def get_features(t,tokenFeatures,featurePrefx):
          tokenFeatures.append(f"{featurePrefx}prf{i}={t[:i]}")
          tokenFeatures.append(f"{featurePrefx}suf{i}={t[-i:]}")
    # Capitalization
+   if t.isupper():tokenFeatures.append(f'{featurePrefx}=AllUpper')
+   if t.islower(): tokenFeatures.append(f'{featurePrefx}=AllLower')
+   if len(t)>1 and t[0].isupper() and t[1].islower():
+      tokenFeatures.append(f'{featurePrefx}=Title')
    hasUpper = True if re.search('[A-Z]+',t) else False
    hasLower = True if re.search('[a-z]+',t) else False
-   isTitle  = True if len(t)>1 and t[0].isupper() and t[1].islower() else False
-   AllUpper = True if t.isupper() else False
-   AllLower = True if t.islower() else False
-   if AllUpper: tokenFeatures.append(f'{featurePrefx}=AllUpper')
-   if AllLower: tokenFeatures.append(f'{featurePrefx}=AllLower')
-   if isTitle : tokenFeatures.append(f'{featurePrefx}=Title')
    if hasUpper: tokenFeatures.append(f'{featurePrefx}=hasUpper')
    if hasLower: tokenFeatures.append(f'{featurePrefx}=hasLower')
-   if not t[0].isupper() and hasUpper: tokenFeatures.append(f'{featurePrefx}=Camel')
+   if not t[0].isupper() and hasUpper: 
+      tokenFeatures.append(f'{featurePrefx}=Camel')
    # Number and symbols
+   if re.search('^[0-9]+$',t):
+      tokenFeatures.append(f'{featurePrefx}=allNumber')
+   if re.search('^[-()+,]+$',t):
+      tokenFeatures.append(f'{featurePrefx}=allSymbol')
    hasNumber= True if re.search('[0-9]+',t) else False
-   allNumber= True if re.search('^[0-9]+$',t) else False
    hasSymbol = False
    for s in ['-','(',')','+']:
       if s in t: 
          tokenFeatures.append(f'{featurePrefx}=has{s}')
          hasSymbol= True
-   allSymbol=True if re.search('^[-()+,]+$',t) else False
-
    if hasNumber:tokenFeatures.append(f'{featurePrefx}=hasNumber')
    if hasSymbol:tokenFeatures.append(f'{featurePrefx}=hasSymbol')
-   if allNumber:tokenFeatures.append(f'{featurePrefx}=allNumber')
-   if allSymbol:tokenFeatures.append(f'{featurePrefx}=allSymbol')
 
    # Compound Features: Only Symbol and all Upper
       # Has both Number and Symbos
-   if hasNumber and hasSymbol: tokenFeatures.append(f'{featurePrefx}=BothNumberAndSymbol')
+   if hasNumber and hasSymbol: 
+      tokenFeatures.append(f'{featurePrefx}=BothNumberAndSymbol')
       # Only Number and All upper
-   if hasNumber and not hasLower and not hasSymbol and hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlyNumberAndUpper')
-      # Only Number and All lower
-   if hasNumber and hasLower and not hasSymbol and not hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlyNumberAndLower')
+   if hasNumber and not hasLower and not hasSymbol and hasUpper: 
+      tokenFeatures.append(f'{featurePrefx}=OnlyNumberAndUpper')
       # Only Symbol and All lower
-   if not hasNumber and hasLower and hasSymbol and not hasUpper: tokenFeatures.append(f'{featurePrefx}=OnlySymbolAndLower')
+   if not hasNumber and hasLower and hasSymbol and not hasUpper: 
+      tokenFeatures.append(f'{featurePrefx}=OnlySymbolAndLower')
    
    # Position Features
    if t[0]=='(':  tokenFeatures.append(f'{featurePrefx}=sw(')
@@ -115,9 +114,7 @@ def extract_features(tokens) :
          get_features(tNext,tokenFeatures,'Next')
       else:
          tokenFeatures.append("EoS")
-
       result.append(tokenFeatures)
-    
    return result
 
 
